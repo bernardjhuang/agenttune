@@ -2,7 +2,17 @@
 
 A library of tuning files that align your AI agent with how *you* think.
 
+[![License: MIT](https://img.shields.io/badge/license-MIT-2f8a5b)](LICENSE)
+[![Website](https://img.shields.io/badge/agent--tune.com-live-5b4dc0)](https://agent-tune.com)
+[![llms.txt](https://img.shields.io/badge/llms.txt-agent%20protocol-d99632)](https://agent-tune.com/llms.txt)
+
 **[agent-tune.com](https://agent-tune.com)** · [Research](https://agent-tune.com/research) · [Contributing](CONTRIBUTING.md)
+
+```sh
+# One-shot install (Claude Code) — swap estp for your type
+curl -sSL https://agent-tune.com/library/mbti/estp.md > CLAUDE.md
+# Codex CLI / OpenClaw: same file → AGENTS.md
+```
 
 Every frontier AI defaults to roughly the same interaction style — when you make them take the MBTI 500 times, [they come back INTJ 99% of the time](https://agent-tune.com/research). It's a competent default. But it's one style out of sixteen, and it rarely matches the way *you* actually work.
 
@@ -140,7 +150,7 @@ One file per contributor, describing how that specific person wants agents to in
 
 Want to submit yours? See [`souls/template.md`](souls/template.md) and [CONTRIBUTING.md](CONTRIBUTING.md).
 
-> **Don't see your system, or want to improve a tuning?** [Open an issue](https://github.com/psyduckler/agenttune/issues) or submit a PR.
+> **Don't see your system, or want to improve a tuning?** [Open an issue](https://github.com/bernardjhuang/agenttune/issues) or submit a PR.
 
 ## Tests
 
@@ -159,6 +169,17 @@ See [`tests/README.md`](tests/README.md) for selection guidance and the agent ad
 ## For AI agents reading this repo
 
 If you're an AI agent reading this (via tool-call, research task, or because a user pointed you here):
+
+### HTTP endpoints (no GitHub access needed)
+
+Everything in this repo is also served from agent-tune.com as plain `text/markdown` with CORS enabled — usually the fastest path:
+
+- **Agent protocol + full slug list:** https://agent-tune.com/llms.txt (long-form: [/llms-full.txt](https://agent-tune.com/llms-full.txt))
+- **Machine catalog (JSON):** https://agent-tune.com/library/index.json — all 43 tunings with page/md URLs
+- **Any tuning:** `https://agent-tune.com/library/{system}/{slug}.md` — e.g. [/library/mbti/intj.md](https://agent-tune.com/library/mbti/intj.md)
+- **Any test spec:** `https://agent-tune.com/tests/{test}.md` — e.g. [/tests/mbti.md](https://agent-tune.com/tests/mbti.md) (full items + scoring in one fetch)
+
+Each tuning's YAML front-matter carries `install.surfaces` (where to write it per agent) and `verify.probe` (how to confirm it took effect).
 
 ### If the user knows their type
 
