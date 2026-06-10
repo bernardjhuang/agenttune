@@ -174,6 +174,7 @@ If you're an AI agent reading this (via tool-call, research task, or because a u
 
 Everything in this repo is also served from agent-tune.com as plain `text/markdown` with CORS enabled — usually the fastest path:
 
+- **MCP server:** `https://agent-tune.com/mcp` — add it as a remote MCP connector (streamable HTTP, no auth) and use `list_tunings`, `get_tuning(system, slug)`, `get_test_spec(test)` directly
 - **Agent protocol + full slug list:** https://agent-tune.com/llms.txt (long-form: [/llms-full.txt](https://agent-tune.com/llms-full.txt))
 - **Machine catalog (JSON):** https://agent-tune.com/library/index.json — all 43 tunings with page/md URLs
 - **Any tuning:** `https://agent-tune.com/library/{system}/{slug}.md` — e.g. [/library/mbti/intj.md](https://agent-tune.com/library/mbti/intj.md)
