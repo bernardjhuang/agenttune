@@ -87,8 +87,8 @@ Each Enneagram type is the sum of 4 items (range 4–20). Higher = stronger fit 
 ### Scoring algorithm
 
 1. Sum the four items for each type. You now have nine scores, each 4–20.
-2. **Dominant type** = the type with the highest score. In a tie, ask the user a tiebreaker question or default to the lower-numbered type.
-3. **Wing** (optional, for higher fidelity): look at the two types adjacent to the dominant on the Enneagram circle (e.g., for Type 5, the wings are Type 4 and Type 6). Whichever neighbor scored higher is the user's wing. Notation: `5w4` or `5w6`.
+2. **Dominant type** = the type with the highest score. If the highest scores tie, report all tied leaders without a dominant type or wing. Offer their library pages for an explicit communication preference; never default to the lower-numbered type.
+3. **Wing** (optional, for higher fidelity): look at the two types adjacent to the dominant on the Enneagram circle (e.g., for Type 5, the wings are Type 4 and Type 6). For a unique dominant type, the higher-scoring neighbor is the optional wing; if the neighbors tie, omit the wing. Notation: `5w4` or `5w6`.
 
 ---
 
@@ -114,7 +114,7 @@ If the secondary type (wing) scored close to dominant — within 1–2 points �
 
 ## Caveats and edge cases
 
-- **Ties at the top** are common. If two types are within 1 point of each other, ask: "Which feels more like you — [Type X description] or [Type Y description]?" Use the user's verbal answer to break the tie.
+- **Ties at the top** are common. If two types are within 1 point of each other, ask: "Which feels more like you — [Type X description] or [Type Y description]?" Label the user's choice as a stated preference, without changing the measured scores.
 - **Item 14 ("bittersweet")** is unusual phrasing. If the user asks for clarification, say: "Do you enjoy emotionally complex feelings where joy and sadness mix?" Don't reveal it's an Individualist item.
 - **For items 8 ("family first") and 13 ("daydream about being in love")**: these are heavily life-context-dependent. If the user explicitly says they don't have family or relationships to anchor against, score the closest functional analog (e.g., "the people you're closest to" for family).
 - **Items 37–54 from the OEPS source instrument** are v2 multi-keyed extensions with less transparent scoring. They're not included in this test for cleanliness. The 36 v1 items here are sufficient for type identification.

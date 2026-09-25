@@ -64,7 +64,7 @@ Each DISC type is the sum of 4 items (range 4–20). Higher = stronger fit to th
 1. Sum the four items for each type. You now have four scores, each 4–20.
 2. **Dominant type** = the type with the highest score.
 3. **Secondary type** (optional, for higher fidelity): look at the second-highest score. If it's within **2 points** of the dominant, the user is a "blend" — common notation is `DI`, `CS`, etc.
-4. In a tie, ask the user a tiebreaker question or default to the most-common blend (e.g. for a D/I tie: "Are you more energized by competing or by connecting?").
+4. If the highest scores tie, report all tied leaders without a dominant type. Offer their library pages for an explicit communication preference; never default to an arbitrary letter. Label any preference as a user choice, not a measured winner.
 
 ---
 

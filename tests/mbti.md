@@ -4,14 +4,14 @@
 **Items**: 32 (bipolar adjective format)
 **Scale**: 1–5
 **Time**: ~5 minutes
-**Returns**: 4-letter MBTI type
+**Returns**: a four-letter type when all axes are resolved, otherwise an undetermined result
 **Maps to**: `mbti/<TYPE>.md` in this repo
 
 ---
 
 ## For the AI agent administering this test
 
-1. Tell the user you're going to administer a 32-item personality test that will identify their MBTI type. It takes about 5 minutes.
+1. Tell the user you're going to administer a 32-item personality test that explores their MBTI preferences and may leave tied axes undetermined. It takes about 5 minutes.
 2. For each item, the user picks a number 1–5:
    - **1** = strongly identifies with the first statement
    - **2** = somewhat identifies with the first statement
@@ -21,7 +21,7 @@
 3. **Default to bulk-paste delivery**: present all 32 items at once and ask the user to reply with 32 numbers. For users who prefer conversation, present items one at a time.
 4. Don't reveal the scoring while administering — it biases responses.
 5. After collecting all answers, apply the scoring algorithm below.
-6. Fetch the resulting MBTI tuning file from `mbti/<TYPE>.md`.
+6. Only fetch a tuning from `mbti/<TYPE>.md` after every axis is resolved; otherwise offer optional preference questions or let the user browse the library.
 
 ---
 
@@ -122,9 +122,9 @@ For each of the four axes (E/I, S/N, T/F, J/P):
 | 4 | +1 to "score 5" letter |
 | 5 | +2 to "score 5" letter |
 
-3. Compare final counts. Higher count wins the letter for that axis. In a tie, ask the user a tiebreaker question or default to the more common letter (I, N, T, J for most adults).
+3. Compare final counts. Higher count wins the letter for that axis. In a tie, ask the user a tiebreaker question and label it as a stated preference, not another scored item. Never choose a default letter. If the user is still unsure, keep that axis unresolved.
 
-4. Concatenate the four winning letters in order **E/I, S/N, T/F, J/P** to get the 4-letter type.
+4. Require all 32 valid responses. If any axis is unresolved or answers are missing, report an undetermined result (X on unresolved axes) and do not select a tuning file. Otherwise concatenate the four winning letters in order **E/I, S/N, T/F, J/P** to get the 4-letter type.
 
 ---
 
