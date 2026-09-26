@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "status": "release_policy",
+  "review_date": "2026-09-26",
+  "policy": {
+    "default": "exclude_when_terms_or_intended_use_are_unresolved",
+    "core_profile": "Original AgentTune material whose MIT provenance is established, plus verified public-domain IPIP definitions.",
+    "conditional_packs": "Require instrument-specific terms, attribution, modification notices and evidence that the actual intended use is covered.",
+    "deployment": "Evaluate the production use separately from whether a pack may be distributed for another purpose. Free access alone does not establish noncommercial use.",
+    "code_separation": "Original engine code is separate from question text, copied keys and source documentation; embedding instrument text in JavaScript does not make that text MIT.",
+    "history": "Capture existing artifacts locally; public historical distributions remain subject to their own rights review.",
+    "permissions": "A permission to administer may not grant modification, public repository hosting, redistribution or downstream commercial reuse. Record exact scope; never infer sublicensing rights."
+  },
+  "instruments": [
+    {
+      "route": "big-five",
+      "source_family": "IPIP",
+      "rights_status": "public_domain_statement_verified",
+      "license_expression": "LicenseRef-IPIP-Public-Domain",
+      "evidence_urls": [
+        "https://ipip.ori.org/newPermission.htm"
+      ],
+      "core_inclusion": "included_after_item_and_key_provenance_review",
+      "next_action": "Preserve the pinned IPIP source hash, independent item/key fixture and documented adaptation history when updating this instrument.",
+      "available": true,
+      "instrumentId": "agenttune-ipip50",
+      "instrumentVersion": "1.0.0",
+      "status": "available"
+    },
+    {
+      "route": "mbti",
+      "source_family": "OEJTS",
+      "upstream_version": "1.2",
+      "rights_status": "license_verified_use_scope_requires_review",
+      "license_expression": "CC-BY-NC-SA-4.0",
+      "evidence_urls": [
+        "https://openpsychometrics.org/tests/OJTS/development/OEJTS1.2.pdf",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      ],
+      "core_inclusion": "exclude_from_unrestricted_commercially_reusable_bundle",
+      "next_action": "Document adaptations and attribution; enable only for a use covered by these terms or additional written permission.",
+      "available": false,
+      "instrumentId": null,
+      "instrumentVersion": null,
+      "status": "unavailable_pending_rights"
+    },
+    {
+      "route": "disc",
+      "source_family": "ODAT",
+      "upstream_version": "pin_exact_definition_before_release",
+      "rights_status": "license_verified_use_scope_requires_review",
+      "license_expression": "CC-BY-NC-SA-4.0",
+      "evidence_urls": [
+        "https://openpsychometrics.org/tests/ODAT/development/",
+        "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      ],
+      "core_inclusion": "exclude_from_unrestricted_commercially_reusable_bundle",
+      "next_action": "Confirm wording, keys and response anchors; document adaptations and evaluate intended use under the license or additional written permission.",
+      "available": false,
+      "instrumentId": null,
+      "instrumentVersion": null,
+      "status": "unavailable_pending_rights"
+    },
+    {
+      "route": "enneagram",
+      "source_family": "OEPS",
+      "upstream_version": "v1_36_item_source",
+      "rights_status": "exact_license_unresolved",
+      "license_expression": null,
+      "evidence_urls": [
+        "https://openpsychometrics.org/development/",
+        "https://openpsychometrics.org/tests/OEPS/development/",
+        "https://openpsychometrics.org/tests/OEPS/development/OSPP-Enneagram-of-Personality-Scales-v1.odt"
+      ],
+      "evidence_note": "The project index describes listed tests as Creative Commons, but the exact license and version for this instrument were not established. This is not evidence that no license exists.",
+      "core_inclusion": "exclude_questionnaire_content_until_terms_established",
+      "next_action": "Obtain authoritative license/version or permission covering adaptation and intended distribution, including GitHub and starter downloads.",
+      "available": false,
+      "instrumentId": null,
+      "instrumentVersion": null,
+      "status": "unavailable_pending_rights"
+    },
+    {
+      "route": "attachment",
+      "source_family": "ECR-R",
+      "upstream_version": "pin_exact_definition_before_release",
+      "rights_status": "noncommercial_research_permission_verified_other_scope_unresolved",
+      "license_expression": "LicenseRef-ECRR-Author-Terms",
+      "evidence_urls": [
+        "https://labs.psychology.illinois.edu/~rcfraley/measures/ecrr.htm"
+      ],
+      "core_inclusion": "exclude_from_general_product_and_downstream_commercial_bundle_without_applicable_permission",
+      "next_action": "Clarify AgentTune product, adaptation, public hosting and downstream reuse rights; do not generalize noncommercial research permission to all distribution.",
+      "available": false,
+      "instrumentId": null,
+      "instrumentVersion": null,
+      "status": "unavailable_pending_rights"
+    }
+  ],
+  "version": "1.0.0"
+}

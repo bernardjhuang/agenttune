@@ -1,0 +1,239 @@
+{
+  "version": "1.0.0",
+  "profile": "core",
+  "source": "https://github.com/bernardjhuang/agenttune",
+  "files": {
+    "CHANGELOG.md": {
+      "sha256": "1db0952e60659669d203dfbe2c35986314e47dea7091e7b01603502fcb8912a5",
+      "bytes": 1247
+    },
+    "compact-tunings.js": {
+      "sha256": "b5b4f8ca60b4054e80eaf6f3729780a7186a1f23cc05e802ef5c5021f5f38a8e",
+      "bytes": 18287
+    },
+    "engine.js": {
+      "sha256": "0f1b3bcf975af27ebb4b02fb8b4ccf0e0ad18cc1082b8e5e784a330e1291936f",
+      "bytes": 5588
+    },
+    "instrument-rights.json": {
+      "sha256": "2d4cb0b26d0cd0452e8e0101de04920fde58cd1ce6c4681ce11b445f78438256",
+      "bytes": 5250
+    },
+    "instruments.json": {
+      "sha256": "61cf9a894520414d0607cea6cf32cfde167b0672606d295dd16661d2853949a9",
+      "bytes": 13633
+    },
+    "legacy-provenance.json": {
+      "sha256": "2a49b3f67495207802ff74dd361181d933d9b51d03afd74d6a6eddae3ac4305e",
+      "bytes": 5179
+    },
+    "LICENSE": {
+      "sha256": "197a2f12f4899c7933ae226fcb03cded186eac4deec6e97065742d090f27e835",
+      "bytes": 1070
+    },
+    "score.js": {
+      "sha256": "4dbdd08ff973e63366edc551311c27ccc02a3b01fa8df25124cf2aeed5afc71d",
+      "bytes": 13765
+    },
+    "tests/attachment.md": {
+      "sha256": "2138e54a22a7435995d1728c88cb6b88da317f88ede6b3a98f28c9a136695783",
+      "bytes": 769
+    },
+    "tests/big-five.md": {
+      "sha256": "81ef21b12da4c2300f0ddf1a7ba044ec1bf549373b8eb8e7bb197c7580a979e2",
+      "bytes": 4015
+    },
+    "tests/disc.md": {
+      "sha256": "c1a7b19b6b75386e9d61aac2a797d6a2a2653b2cdedc571a047e28cc7d83601f",
+      "bytes": 739
+    },
+    "tests/enneagram.md": {
+      "sha256": "13af5e00d9a8c99fb9d8ecbc8e0378fa8810de50d53bfc78d01d725faed109fb",
+      "bytes": 728
+    },
+    "tests/mbti.md": {
+      "sha256": "e2ea61b0d42cd8b0139c6d2424d1d43ea6171c00c9ce5ea8215412bcbf84063a",
+      "bytes": 725
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "sha256": "96fb747e33cf58dc46b8045861dbf54b51719686d4e23c32be1a069575a60a45",
+      "bytes": 1615
+    },
+    "tunings/attachment/anxious.md": {
+      "sha256": "fcfa8601a097f103969038fc4c11c9652ec27f1c658c643d63213f5b8688a826",
+      "bytes": 1188
+    },
+    "tunings/attachment/avoidant.md": {
+      "sha256": "52e84ca5b53144eadc80beb8117b13a0dc1d0314720fd83dfe3284af4bc20c36",
+      "bytes": 1136
+    },
+    "tunings/attachment/disorganized.md": {
+      "sha256": "584cf08c12c65a56c9a5ea02cfc903410ee313cc29b3979b9caf5b9eee14f0d9",
+      "bytes": 1170
+    },
+    "tunings/attachment/secure.md": {
+      "sha256": "5cea33ed809e9aae5304a5ccfa51ad34c78c4d2c12c84ee0fc9f2ba59af8077e",
+      "bytes": 1130
+    },
+    "tunings/disc/c-conscientiousness.md": {
+      "sha256": "4c93857d08ffd2f928129624895995036fb17eba9ce5516c01be4a9a7870a27f",
+      "bytes": 1117
+    },
+    "tunings/disc/d-dominance.md": {
+      "sha256": "eb97f01b575344d73c18aabab2fb2ce8feeae3989312d97524cc38810b8cbf23",
+      "bytes": 1117
+    },
+    "tunings/disc/i-influence.md": {
+      "sha256": "114df6dd84efc54fe159caf6e2925a9392cfcc47ba0bb3c75f8ba6bb81ba301c",
+      "bytes": 1109
+    },
+    "tunings/disc/s-steadiness.md": {
+      "sha256": "d78f6fa93e5005761b7c0db064395bb573601ff31ecac6bfe348aa98cf91031b",
+      "bytes": 1138
+    },
+    "tunings/enneagram/1-reformer.md": {
+      "sha256": "cc9de2cee325f51cb30b8962ee2ac3f2e7aa0a6c40c750eb5b62311a1351edbb",
+      "bytes": 1181
+    },
+    "tunings/enneagram/2-helper.md": {
+      "sha256": "a35bffba20d8c60a0bcb4a1c0b567a1df3af718d24d1fb8a561ce22eda2eba52",
+      "bytes": 1183
+    },
+    "tunings/enneagram/3-achiever.md": {
+      "sha256": "cf7e904a0d18fd2bce3b422720076405c2a8e1ac5928bcdbc53703c44d5a4d1a",
+      "bytes": 1180
+    },
+    "tunings/enneagram/4-individualist.md": {
+      "sha256": "64eb556899d02c1999dd7106a97ce1bf0bc787f23606494974116a4123089d34",
+      "bytes": 1184
+    },
+    "tunings/enneagram/5-investigator.md": {
+      "sha256": "312ebc52a825c6f51df49ed5e658b2a5702db94dbc294cb26d3baff8b994faa9",
+      "bytes": 1199
+    },
+    "tunings/enneagram/6-loyalist.md": {
+      "sha256": "4986e8afd73f103b6c8ea81aa96db9d911ba92a6517b750343c2f98ce56fe4df",
+      "bytes": 1185
+    },
+    "tunings/enneagram/7-enthusiast.md": {
+      "sha256": "2b4f367d8b1285017f94189e6af11df9f61369b19c4b98d1be96f9f794ea4039",
+      "bytes": 1188
+    },
+    "tunings/enneagram/8-challenger.md": {
+      "sha256": "7340b8dd1ff4afe1761366a7b2f596f238d2fb2c1a7c04b90b7a2bec6a8317f5",
+      "bytes": 1185
+    },
+    "tunings/enneagram/9-peacemaker.md": {
+      "sha256": "31b24819a489a403ca9285dbe0c9501eb82553d80a5c2c75f9576098c778028c",
+      "bytes": 1157
+    },
+    "tunings/mbti/enfj.md": {
+      "sha256": "6e626e8beb3b994b06a6f25531ebb070c1acc187ffc97e16645108f332bf53c3",
+      "bytes": 1215
+    },
+    "tunings/mbti/enfp.md": {
+      "sha256": "d7943d7e918cb1a724c4b5f3b7842f2307712e997542c5557b6dbcec029f11f2",
+      "bytes": 1194
+    },
+    "tunings/mbti/entj.md": {
+      "sha256": "d56aff5fbba20f6817a731abe79816fe92d42ff9200f204aa54c35b2890dbb87",
+      "bytes": 1207
+    },
+    "tunings/mbti/entp.md": {
+      "sha256": "607a246148f04fad23473372ced67f8ad101d68f79b7bff9b4d43417c779c0d9",
+      "bytes": 1188
+    },
+    "tunings/mbti/esfj.md": {
+      "sha256": "c05e0aab56da1c88e83ccf7397b01cf67ec559db457d8b9d692d95c1360d3f22",
+      "bytes": 1203
+    },
+    "tunings/mbti/esfp.md": {
+      "sha256": "302069a951ac8963331142245e13b2c269658f172209e2d6410a0db4a4037476",
+      "bytes": 1176
+    },
+    "tunings/mbti/estj.md": {
+      "sha256": "7ba08efdef342214c03159d745f56468985414dac74e7a1ce8594b4a05ad0e70",
+      "bytes": 1203
+    },
+    "tunings/mbti/estp.md": {
+      "sha256": "58e674f0b8d37227f615a0a84ebef660fa2cd278883f8746c1542f6c925541f2",
+      "bytes": 1214
+    },
+    "tunings/mbti/infj.md": {
+      "sha256": "254a2177d9e6152e39f084beb311ca611cd3dc892288e55f47b25de2aaca5f30",
+      "bytes": 1182
+    },
+    "tunings/mbti/infp.md": {
+      "sha256": "68cef164f9aafa9ff1f7ac8b46c5dc411fad465e0f3bb376383135977fda7dfc",
+      "bytes": 1224
+    },
+    "tunings/mbti/intj.md": {
+      "sha256": "560f4c25851a1ddcaebc6e14f2f16167e3d5d4e92a634fc500bf71c7c6761ba9",
+      "bytes": 1223
+    },
+    "tunings/mbti/intp.md": {
+      "sha256": "618c77479bf7ceff6bb63e076f7fa55d39d2e60ab136d586d333d81366d1d2dd",
+      "bytes": 1214
+    },
+    "tunings/mbti/isfj.md": {
+      "sha256": "7c8e037900bc201caec1d54f93e45493f8eca4b71c4f5d1796f7871b81c46430",
+      "bytes": 1191
+    },
+    "tunings/mbti/isfp.md": {
+      "sha256": "d741573599341a162b9686f6e43b1e4bfa637d53bc0fb777851400d44b2b1183",
+      "bytes": 1175
+    },
+    "tunings/mbti/istj.md": {
+      "sha256": "359d55d862613a7bc10d268f50624c1c4a72cae4d9e3132a9d27fb407137b8fc",
+      "bytes": 1209
+    },
+    "tunings/mbti/istp.md": {
+      "sha256": "8a6a63c834b221d704c289a6d938546f322b46ba3b45fd96384abae88b98554c",
+      "bytes": 1171
+    },
+    "tunings/ocean/agreeableness-high.md": {
+      "sha256": "a9a5774d8ba88ac87ec68f2ff255f0a21eb00a0485f3c65ecebe1cb7f11ef4d0",
+      "bytes": 1133
+    },
+    "tunings/ocean/agreeableness-low.md": {
+      "sha256": "c4972fc329a0c10496510117e917661c85a34d1bb84c0e6187c74a43b8c81fa1",
+      "bytes": 1128
+    },
+    "tunings/ocean/conscientiousness-high.md": {
+      "sha256": "523d8999bba9fbc047d2925669a3d44a7eaba9a56debe677383104b7f5a0cfe1",
+      "bytes": 1127
+    },
+    "tunings/ocean/conscientiousness-low.md": {
+      "sha256": "e3573f66db782924878521322379769258db8ceaadb621e68d2f1a79a12952fa",
+      "bytes": 1134
+    },
+    "tunings/ocean/extraversion-high.md": {
+      "sha256": "5ef476613c648ac9ed9b8f0da2b39094044117a91608d3ca7a0a71f8c3d76708",
+      "bytes": 1130
+    },
+    "tunings/ocean/extraversion-low.md": {
+      "sha256": "52f2d04c351b3767ea98356fd5101ae672404ca18a38dbaa610a53643d1bb2bc",
+      "bytes": 1116
+    },
+    "tunings/ocean/neuroticism-high.md": {
+      "sha256": "5304f1a033a34c0d420c14edd0278c6cba05c5f6536b461edca96052494709f6",
+      "bytes": 1154
+    },
+    "tunings/ocean/neuroticism-low.md": {
+      "sha256": "b0660731f5e777145776143cd4cd43ede5a34fd512a2a2876a32c1d7534c8c9c",
+      "bytes": 1122
+    },
+    "tunings/ocean/openness-high.md": {
+      "sha256": "53c8256f66c2bbcbeb03fbe9fc67a1703187148eb8407d3a9db73125234a36fc",
+      "bytes": 1154
+    },
+    "tunings/ocean/openness-low.md": {
+      "sha256": "898333dc1797e4ebff348198e5fcf11872d547f3a548fe4dcb3386d53efa6b9a",
+      "bytes": 1126
+    },
+    "tunings.json": {
+      "sha256": "60c293edb095050ffbfd572be1a911165df83990dd74cb905dc3e49807c7b9b9",
+      "bytes": 27637
+    }
+  }
+}

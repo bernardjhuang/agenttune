@@ -1,0 +1,302 @@
+[
+  {
+    "text": "Am the life of the party.",
+    "dimension": "E",
+    "reverse": false,
+    "sourceLocator": "10-item Factor E, item 1 in source display order"
+  },
+  {
+    "text": "Feel comfortable around people.",
+    "dimension": "E",
+    "reverse": false,
+    "sourceLocator": "10-item Factor E, item 2 in source display order"
+  },
+  {
+    "text": "Start conversations.",
+    "dimension": "E",
+    "reverse": false,
+    "sourceLocator": "10-item Factor E, item 3 in source display order"
+  },
+  {
+    "text": "Talk to a lot of different people at parties.",
+    "dimension": "E",
+    "reverse": false,
+    "sourceLocator": "10-item Factor E, item 4 in source display order"
+  },
+  {
+    "text": "Don't mind being the center of attention.",
+    "dimension": "E",
+    "reverse": false,
+    "sourceLocator": "10-item Factor E, item 5 in source display order"
+  },
+  {
+    "text": "Don't talk a lot.",
+    "dimension": "E",
+    "reverse": true,
+    "sourceLocator": "10-item Factor E, item 6 in source display order"
+  },
+  {
+    "text": "Keep in the background.",
+    "dimension": "E",
+    "reverse": true,
+    "sourceLocator": "10-item Factor E, item 7 in source display order"
+  },
+  {
+    "text": "Have little to say.",
+    "dimension": "E",
+    "reverse": true,
+    "sourceLocator": "10-item Factor E, item 8 in source display order"
+  },
+  {
+    "text": "Don't like to draw attention to myself.",
+    "dimension": "E",
+    "reverse": true,
+    "sourceLocator": "10-item Factor E, item 9 in source display order"
+  },
+  {
+    "text": "Am quiet around strangers.",
+    "dimension": "E",
+    "reverse": true,
+    "sourceLocator": "10-item Factor E, item 10 in source display order"
+  },
+  {
+    "text": "Am interested in people.",
+    "dimension": "A",
+    "reverse": false,
+    "sourceLocator": "10-item Factor A, item 1 in source display order"
+  },
+  {
+    "text": "Sympathize with others' feelings.",
+    "dimension": "A",
+    "reverse": false,
+    "sourceLocator": "10-item Factor A, item 2 in source display order"
+  },
+  {
+    "text": "Have a soft heart.",
+    "dimension": "A",
+    "reverse": false,
+    "sourceLocator": "10-item Factor A, item 3 in source display order"
+  },
+  {
+    "text": "Take time out for others.",
+    "dimension": "A",
+    "reverse": false,
+    "sourceLocator": "10-item Factor A, item 4 in source display order"
+  },
+  {
+    "text": "Feel others' emotions.",
+    "dimension": "A",
+    "reverse": false,
+    "sourceLocator": "10-item Factor A, item 5 in source display order"
+  },
+  {
+    "text": "Make people feel at ease.",
+    "dimension": "A",
+    "reverse": false,
+    "sourceLocator": "10-item Factor A, item 6 in source display order"
+  },
+  {
+    "text": "Am not really interested in others.",
+    "dimension": "A",
+    "reverse": true,
+    "sourceLocator": "10-item Factor A, item 7 in source display order"
+  },
+  {
+    "text": "Insult people.",
+    "dimension": "A",
+    "reverse": true,
+    "sourceLocator": "10-item Factor A, item 8 in source display order"
+  },
+  {
+    "text": "Am not interested in other people's problems.",
+    "dimension": "A",
+    "reverse": true,
+    "sourceLocator": "10-item Factor A, item 9 in source display order"
+  },
+  {
+    "text": "Feel little concern for others.",
+    "dimension": "A",
+    "reverse": true,
+    "sourceLocator": "10-item Factor A, item 10 in source display order"
+  },
+  {
+    "text": "Am always prepared.",
+    "dimension": "C",
+    "reverse": false,
+    "sourceLocator": "10-item Factor C, item 1 in source display order"
+  },
+  {
+    "text": "Pay attention to details.",
+    "dimension": "C",
+    "reverse": false,
+    "sourceLocator": "10-item Factor C, item 2 in source display order"
+  },
+  {
+    "text": "Get chores done right away.",
+    "dimension": "C",
+    "reverse": false,
+    "sourceLocator": "10-item Factor C, item 3 in source display order"
+  },
+  {
+    "text": "Like order.",
+    "dimension": "C",
+    "reverse": false,
+    "sourceLocator": "10-item Factor C, item 4 in source display order"
+  },
+  {
+    "text": "Follow a schedule.",
+    "dimension": "C",
+    "reverse": false,
+    "sourceLocator": "10-item Factor C, item 5 in source display order"
+  },
+  {
+    "text": "Am exacting in my work.",
+    "dimension": "C",
+    "reverse": false,
+    "sourceLocator": "10-item Factor C, item 6 in source display order"
+  },
+  {
+    "text": "Leave my belongings around.",
+    "dimension": "C",
+    "reverse": true,
+    "sourceLocator": "10-item Factor C, item 7 in source display order"
+  },
+  {
+    "text": "Make a mess of things.",
+    "dimension": "C",
+    "reverse": true,
+    "sourceLocator": "10-item Factor C, item 8 in source display order"
+  },
+  {
+    "text": "Often forget to put things back in their proper place.",
+    "dimension": "C",
+    "reverse": true,
+    "sourceLocator": "10-item Factor C, item 9 in source display order"
+  },
+  {
+    "text": "Shirk my duties.",
+    "dimension": "C",
+    "reverse": true,
+    "sourceLocator": "10-item Factor C, item 10 in source display order"
+  },
+  {
+    "text": "Am relaxed most of the time.",
+    "dimension": "N",
+    "reverse": true,
+    "sourceLocator": "10-item Factor N, item 1 in source display order"
+  },
+  {
+    "text": "Seldom feel blue.",
+    "dimension": "N",
+    "reverse": true,
+    "sourceLocator": "10-item Factor N, item 2 in source display order"
+  },
+  {
+    "text": "Get stressed out easily.",
+    "dimension": "N",
+    "reverse": false,
+    "sourceLocator": "10-item Factor N, item 3 in source display order"
+  },
+  {
+    "text": "Worry about things.",
+    "dimension": "N",
+    "reverse": false,
+    "sourceLocator": "10-item Factor N, item 4 in source display order"
+  },
+  {
+    "text": "Am easily disturbed.",
+    "dimension": "N",
+    "reverse": false,
+    "sourceLocator": "10-item Factor N, item 5 in source display order"
+  },
+  {
+    "text": "Get upset easily.",
+    "dimension": "N",
+    "reverse": false,
+    "sourceLocator": "10-item Factor N, item 6 in source display order"
+  },
+  {
+    "text": "Change my mood a lot.",
+    "dimension": "N",
+    "reverse": false,
+    "sourceLocator": "10-item Factor N, item 7 in source display order"
+  },
+  {
+    "text": "Have frequent mood swings.",
+    "dimension": "N",
+    "reverse": false,
+    "sourceLocator": "10-item Factor N, item 8 in source display order"
+  },
+  {
+    "text": "Get irritated easily.",
+    "dimension": "N",
+    "reverse": false,
+    "sourceLocator": "10-item Factor N, item 9 in source display order"
+  },
+  {
+    "text": "Often feel blue.",
+    "dimension": "N",
+    "reverse": false,
+    "sourceLocator": "10-item Factor N, item 10 in source display order"
+  },
+  {
+    "text": "Have a rich vocabulary.",
+    "dimension": "O",
+    "reverse": false,
+    "sourceLocator": "10-item Factor O, item 1 in source display order"
+  },
+  {
+    "text": "Have a vivid imagination.",
+    "dimension": "O",
+    "reverse": false,
+    "sourceLocator": "10-item Factor O, item 2 in source display order"
+  },
+  {
+    "text": "Have excellent ideas.",
+    "dimension": "O",
+    "reverse": false,
+    "sourceLocator": "10-item Factor O, item 3 in source display order"
+  },
+  {
+    "text": "Am quick to understand things.",
+    "dimension": "O",
+    "reverse": false,
+    "sourceLocator": "10-item Factor O, item 4 in source display order"
+  },
+  {
+    "text": "Use difficult words.",
+    "dimension": "O",
+    "reverse": false,
+    "sourceLocator": "10-item Factor O, item 5 in source display order"
+  },
+  {
+    "text": "Spend time reflecting on things.",
+    "dimension": "O",
+    "reverse": false,
+    "sourceLocator": "10-item Factor O, item 6 in source display order"
+  },
+  {
+    "text": "Am full of ideas.",
+    "dimension": "O",
+    "reverse": false,
+    "sourceLocator": "10-item Factor O, item 7 in source display order"
+  },
+  {
+    "text": "Have difficulty understanding abstract ideas.",
+    "dimension": "O",
+    "reverse": true,
+    "sourceLocator": "10-item Factor O, item 8 in source display order"
+  },
+  {
+    "text": "Am not interested in abstract ideas.",
+    "dimension": "O",
+    "reverse": true,
+    "sourceLocator": "10-item Factor O, item 9 in source display order"
+  },
+  {
+    "text": "Do not have a good imagination.",
+    "dimension": "O",
+    "reverse": true,
+    "sourceLocator": "10-item Factor O, item 10 in source display order"
+  }
+]
