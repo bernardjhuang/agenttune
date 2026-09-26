@@ -1,5 +1,5 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),crypto=require('node:crypto'),path=require('node:path');
-const root=path.resolve(__dirname,'..'),defs=require('../dist/instruments.json'),d=defs[0],api=require('../dist/score.js'),engine=require('../src/scoring/engine.js');
+const root=path.resolve(__dirname,'..'),defs=require('../dist/instruments.json'),d=defs.find(d=>d.route==='big-five'),api=require('../dist/score.js'),engine=require('../src/scoring/engine.js');
 const hash=x=>crypto.createHash('sha256').update(x).digest('hex');
 const request=responses=>({instrumentId:d.id,instrumentVersion:d.version,responses});
 const neutral=d.items.map(i=>({itemId:i.id,value:3}));
@@ -39,7 +39,7 @@ test('release artifacts have exact checksums, approved definitions and all 43 gu
  assert.equal(profiles.length,43);assert.equal(new Set(profiles.map(p=>p.id)).size,43);
  for(const [file,meta] of Object.entries(manifest.files)){const raw=fs.readFileSync(path.join(root,'dist',file));assert.equal(hash(raw),meta.sha256,file);assert.equal(raw.length,meta.bytes);}
  for(const p of profiles){const body=fs.readFileSync(path.join(root,'dist',p.bodyPath),'utf8');assert.equal(body,fs.readFileSync(path.join(root,p.path),'utf8'));assert.equal(hash(body),p.sha256);assert.match(body,/material uncertainty/);assert.match(body,/authorized scope/);assert.match(body,/does not authorize installation/);assert.doesNotMatch(body,/Confident wrong|only if asked|OCEAN beats/);}
- assert.deepEqual(defs.map(x=>x.route),['big-five']);for(const def of defs)assert.ok(rights.instruments.find(r=>r.route===def.route&&r.available));
+ assert.deepEqual(defs.map(x=>x.route).sort(),['attachment','big-five','disc','enneagram','mbti']);for(const def of defs)assert.ok(rights.instruments.find(r=>r.route===def.route&&r.available));
  for(const policy of rights.instruments.filter(r=>!r.available)){const text=fs.readFileSync(path.join(root,'tests',policy.route+'.md'),'utf8');assert.match(text,/unavailable_pending_rights/);}
  assert.ok(!fs.readFileSync(path.join(root,'dist/score.js'),'utf8').includes(d.items[0].text));
 });

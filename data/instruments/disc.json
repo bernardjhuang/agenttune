@@ -1,0 +1,152 @@
+{
+  "id": "agenttune-disc-legacy",
+  "version": "1.0.0",
+  "route": "disc",
+  "title": "DISC — AgentTune ODAT adaptation",
+  "mode": "sum",
+  "dimensions": [
+    "D",
+    "I",
+    "S",
+    "C"
+  ],
+  "range": [
+    1,
+    5
+  ],
+  "license": "CC-BY-NC-SA-4.0",
+  "source": "https://openpsychometrics.org/tests/ODAT/development/",
+  "sourceVersion": "AgentTune website f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+  "restoredFrom": {
+    "repository": "https://github.com/bernardjhuang/agenttune-website",
+    "commit": "f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+    "path": "resources/scoring/questions.json",
+    "sha256": "e9c7c05fcae2c9c00c4a9994f09eca6d00be1d0c63b55ad9cf6db3efca9fd333"
+  },
+  "anchors": [
+    "Disagree",
+    "Slightly disagree",
+    "Neutral",
+    "Slightly agree",
+    "Agree"
+  ],
+  "instructions": "Choose the response that best describes you. Answer every item; scores describe this adaptation and are not a diagnosis. Review any suggested communication preferences before using them.",
+  "adaptations": [
+    "Preserves the previous AgentTune website wording, display order, keys and response anchors. This is a versioned AgentTune adaptation, not an unmodified publisher edition."
+  ],
+  "items": [
+    {
+      "id": "disc-01",
+      "displayOrder": 1,
+      "text": "I put people under pressure.",
+      "dimension": "D",
+      "reverse": false
+    },
+    {
+      "id": "disc-02",
+      "displayOrder": 2,
+      "text": "I have a strong need for power.",
+      "dimension": "D",
+      "reverse": false
+    },
+    {
+      "id": "disc-03",
+      "displayOrder": 3,
+      "text": "I try to outdo others.",
+      "dimension": "D",
+      "reverse": false
+    },
+    {
+      "id": "disc-04",
+      "displayOrder": 4,
+      "text": "I am always on the look out for ways to make money.",
+      "dimension": "D",
+      "reverse": false
+    },
+    {
+      "id": "disc-05",
+      "displayOrder": 5,
+      "text": "I enjoy being part of a loud crowd.",
+      "dimension": "I",
+      "reverse": false
+    },
+    {
+      "id": "disc-06",
+      "displayOrder": 6,
+      "text": "I want strangers to love me.",
+      "dimension": "I",
+      "reverse": false
+    },
+    {
+      "id": "disc-07",
+      "displayOrder": 7,
+      "text": "I joke around a lot.",
+      "dimension": "I",
+      "reverse": false
+    },
+    {
+      "id": "disc-08",
+      "displayOrder": 8,
+      "text": "I make lots of noise.",
+      "dimension": "I",
+      "reverse": false
+    },
+    {
+      "id": "disc-09",
+      "displayOrder": 9,
+      "text": "I hesitate to criticize other people's ideas.",
+      "dimension": "S",
+      "reverse": false
+    },
+    {
+      "id": "disc-10",
+      "displayOrder": 10,
+      "text": "I value cooperation over competition.",
+      "dimension": "S",
+      "reverse": false
+    },
+    {
+      "id": "disc-11",
+      "displayOrder": 11,
+      "text": "I just want everyone to be equal.",
+      "dimension": "S",
+      "reverse": false
+    },
+    {
+      "id": "disc-12",
+      "displayOrder": 12,
+      "text": "I seldom toot my own horn.",
+      "dimension": "S",
+      "reverse": false
+    },
+    {
+      "id": "disc-13",
+      "displayOrder": 13,
+      "text": "I am emotionally reserved.",
+      "dimension": "C",
+      "reverse": false
+    },
+    {
+      "id": "disc-14",
+      "displayOrder": 14,
+      "text": "I read the fine print.",
+      "dimension": "C",
+      "reverse": false
+    },
+    {
+      "id": "disc-15",
+      "displayOrder": 15,
+      "text": "I love order and regularity.",
+      "dimension": "C",
+      "reverse": false
+    },
+    {
+      "id": "disc-16",
+      "displayOrder": 16,
+      "text": "My first reaction to an idea is to see its flaws.",
+      "dimension": "C",
+      "reverse": false
+    }
+  ],
+  "classification": "highest"
+}

@@ -3,13 +3,13 @@
   "status": "release_policy",
   "review_date": "2026-09-26",
   "policy": {
-    "default": "exclude_when_terms_or_intended_use_are_unresolved",
-    "core_profile": "Original AgentTune material whose MIT provenance is established, plus verified public-domain IPIP definitions.",
+    "default": "publish_versioned_adaptations_with_instrument_specific_terms",
+    "core_profile": "Original MIT code and templates, public-domain IPIP items, and restored legacy questionnaire adaptations under their separate source terms. Availability is not a grant of redistribution rights.",
     "conditional_packs": "Require instrument-specific terms, attribution, modification notices and evidence that the actual intended use is covered.",
     "deployment": "Evaluate the production use separately from whether a pack may be distributed for another purpose. Free access alone does not establish noncommercial use.",
     "code_separation": "Original engine code is separate from question text, copied keys and source documentation; embedding instrument text in JavaScript does not make that text MIT.",
     "history": "Capture existing artifacts locally; public historical distributions remain subject to their own rights review.",
-    "permissions": "A permission to administer may not grant modification, public repository hosting, redistribution or downstream commercial reuse. Record exact scope; never infer sublicensing rights."
+    "permissions": "A permission to administer may not grant modification, public repository hosting, redistribution or downstream commercial reuse. Record exact scope; never infer sublicensing rights. Operational availability does not certify or expand these rights."
   },
   "instruments": [
     {
@@ -37,12 +37,13 @@
         "https://openpsychometrics.org/tests/OJTS/development/OEJTS1.2.pdf",
         "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       ],
-      "core_inclusion": "exclude_from_unrestricted_commercially_reusable_bundle",
+      "core_inclusion": "included_as_versioned_legacy_adaptation_with_separate_source_terms",
       "next_action": "Document adaptations and attribution; enable only for a use covered by these terms or additional written permission.",
-      "available": false,
-      "instrumentId": null,
-      "instrumentVersion": null,
-      "status": "unavailable_pending_rights"
+      "available": true,
+      "instrumentId": "agenttune-mbti-legacy",
+      "instrumentVersion": "1.0.0",
+      "status": "available",
+      "availability_note": "Restored at the site owner’s request. Source terms and unresolved reuse questions remain unchanged; availability does not establish unrestricted redistribution rights."
     },
     {
       "route": "disc",
@@ -54,12 +55,13 @@
         "https://openpsychometrics.org/tests/ODAT/development/",
         "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       ],
-      "core_inclusion": "exclude_from_unrestricted_commercially_reusable_bundle",
+      "core_inclusion": "included_as_versioned_legacy_adaptation_with_separate_source_terms",
       "next_action": "Confirm wording, keys and response anchors; document adaptations and evaluate intended use under the license or additional written permission.",
-      "available": false,
-      "instrumentId": null,
-      "instrumentVersion": null,
-      "status": "unavailable_pending_rights"
+      "available": true,
+      "instrumentId": "agenttune-disc-legacy",
+      "instrumentVersion": "1.0.0",
+      "status": "available",
+      "availability_note": "Restored at the site owner’s request. Source terms and unresolved reuse questions remain unchanged; availability does not establish unrestricted redistribution rights."
     },
     {
       "route": "enneagram",
@@ -73,12 +75,13 @@
         "https://openpsychometrics.org/tests/OEPS/development/OSPP-Enneagram-of-Personality-Scales-v1.odt"
       ],
       "evidence_note": "The project index describes listed tests as Creative Commons, but the exact license and version for this instrument were not established. This is not evidence that no license exists.",
-      "core_inclusion": "exclude_questionnaire_content_until_terms_established",
+      "core_inclusion": "included_as_versioned_legacy_adaptation_with_separate_source_terms",
       "next_action": "Obtain authoritative license/version or permission covering adaptation and intended distribution, including GitHub and starter downloads.",
-      "available": false,
-      "instrumentId": null,
-      "instrumentVersion": null,
-      "status": "unavailable_pending_rights"
+      "available": true,
+      "instrumentId": "agenttune-enneagram-legacy",
+      "instrumentVersion": "1.0.0",
+      "status": "available",
+      "availability_note": "Restored at the site owner’s request. Source terms and unresolved reuse questions remain unchanged; availability does not establish unrestricted redistribution rights."
     },
     {
       "route": "attachment",
@@ -89,13 +92,14 @@
       "evidence_urls": [
         "https://labs.psychology.illinois.edu/~rcfraley/measures/ecrr.htm"
       ],
-      "core_inclusion": "exclude_from_general_product_and_downstream_commercial_bundle_without_applicable_permission",
+      "core_inclusion": "included_as_versioned_legacy_adaptation_with_separate_source_terms",
       "next_action": "Clarify AgentTune product, adaptation, public hosting and downstream reuse rights; do not generalize noncommercial research permission to all distribution.",
-      "available": false,
-      "instrumentId": null,
-      "instrumentVersion": null,
-      "status": "unavailable_pending_rights"
+      "available": true,
+      "instrumentId": "agenttune-attachment-legacy",
+      "instrumentVersion": "1.0.0",
+      "status": "available",
+      "availability_note": "Restored at the site owner’s request. Source terms and unresolved reuse questions remain unchanged; availability does not establish unrestricted redistribution rights."
     }
   ],
-  "version": "1.0.0"
+  "version": "1.1.0"
 }

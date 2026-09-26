@@ -1,0 +1,298 @@
+{
+  "id": "agenttune-enneagram-legacy",
+  "version": "1.0.0",
+  "route": "enneagram",
+  "title": "Enneagram — AgentTune OEPS adaptation",
+  "mode": "sum",
+  "dimensions": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "range": [
+    1,
+    5
+  ],
+  "license": null,
+  "source": "https://openpsychometrics.org/development/",
+  "sourceVersion": "AgentTune website f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+  "restoredFrom": {
+    "repository": "https://github.com/bernardjhuang/agenttune-website",
+    "commit": "f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+    "path": "resources/scoring/questions.json",
+    "sha256": "e9c7c05fcae2c9c00c4a9994f09eca6d00be1d0c63b55ad9cf6db3efca9fd333"
+  },
+  "anchors": [
+    "Disagree",
+    "Slightly disagree",
+    "Neutral",
+    "Slightly agree",
+    "Agree"
+  ],
+  "instructions": "Choose the response that best describes you. Answer every item; scores describe this adaptation and are not a diagnosis. Review any suggested communication preferences before using them.",
+  "adaptations": [
+    "Preserves the previous AgentTune website wording, display order, keys and response anchors. This is a versioned AgentTune adaptation, not an unmodified publisher edition.",
+    "Uses the historical 36-item grouped adaptation. Items 15 and 32 retain substitutions relative to upstream items 22 and 35. Anchors preserve the website labels, which differ from the older Markdown specification."
+  ],
+  "items": [
+    {
+      "id": "enneagram-01",
+      "displayOrder": 1,
+      "text": "I am a perfectionist.",
+      "dimension": "1",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-02",
+      "displayOrder": 2,
+      "text": "I strive for efficiency.",
+      "dimension": "1",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-03",
+      "displayOrder": 3,
+      "text": "I often have to redo other people's work.",
+      "dimension": "1",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-04",
+      "displayOrder": 4,
+      "text": "I keep my belongings in order.",
+      "dimension": "1",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-05",
+      "displayOrder": 5,
+      "text": "My relationships with others are what my life is about.",
+      "dimension": "2",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-06",
+      "displayOrder": 6,
+      "text": "I have difficulty saying no.",
+      "dimension": "2",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-07",
+      "displayOrder": 7,
+      "text": "I get lots of satisfaction from helping others achieve their goals.",
+      "dimension": "2",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-08",
+      "displayOrder": 8,
+      "text": "I put family first.",
+      "dimension": "2",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-09",
+      "displayOrder": 9,
+      "text": "I put work first.",
+      "dimension": "3",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-10",
+      "displayOrder": 10,
+      "text": "I like to stand out.",
+      "dimension": "3",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-11",
+      "displayOrder": 11,
+      "text": "It is good to wake up to a full day of planned activities.",
+      "dimension": "3",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-12",
+      "displayOrder": 12,
+      "text": "Money is important to my happiness.",
+      "dimension": "3",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-13",
+      "displayOrder": 13,
+      "text": "I daydream about being in love.",
+      "dimension": "4",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-14",
+      "displayOrder": 14,
+      "text": "I really enjoy feeling bittersweet.",
+      "dimension": "4",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-15",
+      "displayOrder": 15,
+      "text": "I get deeply immersed in music.",
+      "dimension": "4",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-16",
+      "displayOrder": 16,
+      "text": "I side with the rebels over the establishment.",
+      "dimension": "4",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-17",
+      "displayOrder": 17,
+      "text": "I have a hard time showing emotions.",
+      "dimension": "5",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-18",
+      "displayOrder": 18,
+      "text": "I spend hours alone with my hobbies.",
+      "dimension": "5",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-19",
+      "displayOrder": 19,
+      "text": "I spend most of my time trying to understand things.",
+      "dimension": "5",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-20",
+      "displayOrder": 20,
+      "text": "I like mental challenges.",
+      "dimension": "5",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-21",
+      "displayOrder": 21,
+      "text": "Fear of being taken advantage of keeps me from being more trusting.",
+      "dimension": "6",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-22",
+      "displayOrder": 22,
+      "text": "I get input from others before I make a decision.",
+      "dimension": "6",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-23",
+      "displayOrder": 23,
+      "text": "I conform.",
+      "dimension": "6",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-24",
+      "displayOrder": 24,
+      "text": "I am loyal.",
+      "dimension": "6",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-25",
+      "displayOrder": 25,
+      "text": "I must always be having new experiences.",
+      "dimension": "7",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-26",
+      "displayOrder": 26,
+      "text": "I can keep a conversation going with anyone about anything.",
+      "dimension": "7",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-27",
+      "displayOrder": 27,
+      "text": "I am uninhibited.",
+      "dimension": "7",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-28",
+      "displayOrder": 28,
+      "text": "I always try to break the tension with a good joke.",
+      "dimension": "7",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-29",
+      "displayOrder": 29,
+      "text": "I naturally emerge as a leader.",
+      "dimension": "8",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-30",
+      "displayOrder": 30,
+      "text": "I like a conversation where no one agrees.",
+      "dimension": "8",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-31",
+      "displayOrder": 31,
+      "text": "I want people to tell me the truth, not spare my feelings.",
+      "dimension": "8",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-32",
+      "displayOrder": 32,
+      "text": "I come up with good solutions.",
+      "dimension": "8",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-33",
+      "displayOrder": 33,
+      "text": "When other people are arguing, I leave the room.",
+      "dimension": "9",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-34",
+      "displayOrder": 34,
+      "text": "I keep my thoughts to myself to prevent trouble.",
+      "dimension": "9",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-35",
+      "displayOrder": 35,
+      "text": "I am very accepting and flexible.",
+      "dimension": "9",
+      "reverse": false
+    },
+    {
+      "id": "enneagram-36",
+      "displayOrder": 36,
+      "text": "I avoid confrontation.",
+      "dimension": "9",
+      "reverse": false
+    }
+  ],
+  "classification": "highest"
+}

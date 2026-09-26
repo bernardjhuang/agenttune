@@ -1,5 +1,298 @@
 [
   {
+    "id": "agenttune-attachment-legacy",
+    "version": "1.0.0",
+    "route": "attachment",
+    "title": "Attachment — AgentTune ECR-R adaptation",
+    "mode": "mean",
+    "dimensions": [
+      "anxiety",
+      "avoidance"
+    ],
+    "range": [
+      1,
+      7
+    ],
+    "license": "LicenseRef-ECRR-Author-Terms",
+    "source": "https://labs.psychology.illinois.edu/~rcfraley/measures/ecrr.htm",
+    "sourceVersion": "AgentTune website f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+    "restoredFrom": {
+      "repository": "https://github.com/bernardjhuang/agenttune-website",
+      "commit": "f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+      "path": "resources/scoring/questions.json",
+      "sha256": "e9c7c05fcae2c9c00c4a9994f09eca6d00be1d0c63b55ad9cf6db3efca9fd333"
+    },
+    "anchors": [
+      "Strongly disagree",
+      "Disagree",
+      "Slightly disagree",
+      "Neutral",
+      "Slightly agree",
+      "Agree",
+      "Strongly agree"
+    ],
+    "instructions": "Choose the response that best describes you. Answer every item; scores describe this adaptation and are not a diagnosis. Review any suggested communication preferences before using them.",
+    "adaptations": [
+      "Preserves the previous AgentTune website wording, display order, keys and response anchors. This is a versioned AgentTune adaptation, not an unmodified publisher edition.",
+      "The four category labels use a heuristic midpoint split at 4; a value of exactly 4 falls on the low side. Continuous scores remain primary."
+    ],
+    "items": [
+      {
+        "id": "attachment-01",
+        "displayOrder": 1,
+        "text": "I'm afraid that I will lose my partner's love.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-02",
+        "displayOrder": 2,
+        "text": "I often worry that my partner will not want to stay with me.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-03",
+        "displayOrder": 3,
+        "text": "I often worry that my partner doesn't really love me.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-04",
+        "displayOrder": 4,
+        "text": "I worry that romantic partners won't care about me as much as I care about them.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-05",
+        "displayOrder": 5,
+        "text": "I often wish that my partner's feelings for me were as strong as my feelings for them.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-06",
+        "displayOrder": 6,
+        "text": "I worry a lot about my relationships.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-07",
+        "displayOrder": 7,
+        "text": "When my partner is out of sight, I worry that they might become interested in someone else.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-08",
+        "displayOrder": 8,
+        "text": "When I show my feelings for romantic partners, I'm afraid they will not feel the same about me.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-09",
+        "displayOrder": 9,
+        "text": "I rarely worry about my partner leaving me.",
+        "dimension": "anxiety",
+        "reverse": true
+      },
+      {
+        "id": "attachment-10",
+        "displayOrder": 10,
+        "text": "My romantic partner makes me doubt myself.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-11",
+        "displayOrder": 11,
+        "text": "I do not often worry about being abandoned.",
+        "dimension": "anxiety",
+        "reverse": true
+      },
+      {
+        "id": "attachment-12",
+        "displayOrder": 12,
+        "text": "I find that my partner(s) don't want to get as close as I would like.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-13",
+        "displayOrder": 13,
+        "text": "Sometimes romantic partners change their feelings about me for no apparent reason.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-14",
+        "displayOrder": 14,
+        "text": "My desire to be very close sometimes scares people away.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-15",
+        "displayOrder": 15,
+        "text": "I'm afraid that once a romantic partner gets to know me, they won't like who I really am.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-16",
+        "displayOrder": 16,
+        "text": "It makes me mad that I don't get the affection and support I need from my partner.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-17",
+        "displayOrder": 17,
+        "text": "I worry that I won't measure up to other people.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-18",
+        "displayOrder": 18,
+        "text": "My partner only seems to notice me when I'm angry.",
+        "dimension": "anxiety",
+        "reverse": false
+      },
+      {
+        "id": "attachment-19",
+        "displayOrder": 19,
+        "text": "I prefer not to show a partner how I feel deep down.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "attachment-20",
+        "displayOrder": 20,
+        "text": "I feel comfortable sharing my private thoughts and feelings with my partner.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-21",
+        "displayOrder": 21,
+        "text": "I find it difficult to allow myself to depend on romantic partners.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "attachment-22",
+        "displayOrder": 22,
+        "text": "I am very comfortable being close to romantic partners.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-23",
+        "displayOrder": 23,
+        "text": "I don't feel comfortable opening up to romantic partners.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "attachment-24",
+        "displayOrder": 24,
+        "text": "I prefer not to be too close to romantic partners.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "attachment-25",
+        "displayOrder": 25,
+        "text": "I get uncomfortable when a romantic partner wants to be very close.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "attachment-26",
+        "displayOrder": 26,
+        "text": "I find it relatively easy to get close to my partner.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-27",
+        "displayOrder": 27,
+        "text": "It's not difficult for me to get close to my partner.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-28",
+        "displayOrder": 28,
+        "text": "I usually discuss my problems and concerns with my partner.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-29",
+        "displayOrder": 29,
+        "text": "It helps to turn to my romantic partner in times of need.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-30",
+        "displayOrder": 30,
+        "text": "I tell my partner just about everything.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-31",
+        "displayOrder": 31,
+        "text": "I talk things over with my partner.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-32",
+        "displayOrder": 32,
+        "text": "I am nervous when partners get too close to me.",
+        "dimension": "avoidance",
+        "reverse": false
+      },
+      {
+        "id": "attachment-33",
+        "displayOrder": 33,
+        "text": "I feel comfortable depending on romantic partners.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-34",
+        "displayOrder": 34,
+        "text": "I find it easy to depend on romantic partners.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-35",
+        "displayOrder": 35,
+        "text": "It's easy for me to be affectionate with my partner.",
+        "dimension": "avoidance",
+        "reverse": true
+      },
+      {
+        "id": "attachment-36",
+        "displayOrder": 36,
+        "text": "My partner really understands me and my needs.",
+        "dimension": "avoidance",
+        "reverse": true
+      }
+    ],
+    "definitionHash": "8c3954b0faa5cd6bd2633088a211e968300847c7ef0e64ba736166ed5cdecf13"
+  },
+  {
     "id": "agenttune-ipip50",
     "version": "1.0.0",
     "route": "big-five",
@@ -438,5 +731,804 @@
     "sourceSha256": "8577862772802903db4330c5a2178bd3948894fe86b82909865bb9b5f17411f9",
     "sourceReviewed": "2026-09-26",
     "definitionHash": "d310c892c4a4fc6d2bb3b1b443bce43d697b808e92f6d26ecdce1139b8ebb352"
+  },
+  {
+    "id": "agenttune-disc-legacy",
+    "version": "1.0.0",
+    "route": "disc",
+    "title": "DISC — AgentTune ODAT adaptation",
+    "mode": "sum",
+    "dimensions": [
+      "D",
+      "I",
+      "S",
+      "C"
+    ],
+    "range": [
+      1,
+      5
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "source": "https://openpsychometrics.org/tests/ODAT/development/",
+    "sourceVersion": "AgentTune website f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+    "restoredFrom": {
+      "repository": "https://github.com/bernardjhuang/agenttune-website",
+      "commit": "f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+      "path": "resources/scoring/questions.json",
+      "sha256": "e9c7c05fcae2c9c00c4a9994f09eca6d00be1d0c63b55ad9cf6db3efca9fd333"
+    },
+    "anchors": [
+      "Disagree",
+      "Slightly disagree",
+      "Neutral",
+      "Slightly agree",
+      "Agree"
+    ],
+    "instructions": "Choose the response that best describes you. Answer every item; scores describe this adaptation and are not a diagnosis. Review any suggested communication preferences before using them.",
+    "adaptations": [
+      "Preserves the previous AgentTune website wording, display order, keys and response anchors. This is a versioned AgentTune adaptation, not an unmodified publisher edition."
+    ],
+    "items": [
+      {
+        "id": "disc-01",
+        "displayOrder": 1,
+        "text": "I put people under pressure.",
+        "dimension": "D",
+        "reverse": false
+      },
+      {
+        "id": "disc-02",
+        "displayOrder": 2,
+        "text": "I have a strong need for power.",
+        "dimension": "D",
+        "reverse": false
+      },
+      {
+        "id": "disc-03",
+        "displayOrder": 3,
+        "text": "I try to outdo others.",
+        "dimension": "D",
+        "reverse": false
+      },
+      {
+        "id": "disc-04",
+        "displayOrder": 4,
+        "text": "I am always on the look out for ways to make money.",
+        "dimension": "D",
+        "reverse": false
+      },
+      {
+        "id": "disc-05",
+        "displayOrder": 5,
+        "text": "I enjoy being part of a loud crowd.",
+        "dimension": "I",
+        "reverse": false
+      },
+      {
+        "id": "disc-06",
+        "displayOrder": 6,
+        "text": "I want strangers to love me.",
+        "dimension": "I",
+        "reverse": false
+      },
+      {
+        "id": "disc-07",
+        "displayOrder": 7,
+        "text": "I joke around a lot.",
+        "dimension": "I",
+        "reverse": false
+      },
+      {
+        "id": "disc-08",
+        "displayOrder": 8,
+        "text": "I make lots of noise.",
+        "dimension": "I",
+        "reverse": false
+      },
+      {
+        "id": "disc-09",
+        "displayOrder": 9,
+        "text": "I hesitate to criticize other people's ideas.",
+        "dimension": "S",
+        "reverse": false
+      },
+      {
+        "id": "disc-10",
+        "displayOrder": 10,
+        "text": "I value cooperation over competition.",
+        "dimension": "S",
+        "reverse": false
+      },
+      {
+        "id": "disc-11",
+        "displayOrder": 11,
+        "text": "I just want everyone to be equal.",
+        "dimension": "S",
+        "reverse": false
+      },
+      {
+        "id": "disc-12",
+        "displayOrder": 12,
+        "text": "I seldom toot my own horn.",
+        "dimension": "S",
+        "reverse": false
+      },
+      {
+        "id": "disc-13",
+        "displayOrder": 13,
+        "text": "I am emotionally reserved.",
+        "dimension": "C",
+        "reverse": false
+      },
+      {
+        "id": "disc-14",
+        "displayOrder": 14,
+        "text": "I read the fine print.",
+        "dimension": "C",
+        "reverse": false
+      },
+      {
+        "id": "disc-15",
+        "displayOrder": 15,
+        "text": "I love order and regularity.",
+        "dimension": "C",
+        "reverse": false
+      },
+      {
+        "id": "disc-16",
+        "displayOrder": 16,
+        "text": "My first reaction to an idea is to see its flaws.",
+        "dimension": "C",
+        "reverse": false
+      }
+    ],
+    "classification": "highest",
+    "definitionHash": "8f508fdc50ce6f527270e636f6a2f9f64f883b93140d1a441c54b8e16385f498"
+  },
+  {
+    "id": "agenttune-enneagram-legacy",
+    "version": "1.0.0",
+    "route": "enneagram",
+    "title": "Enneagram — AgentTune OEPS adaptation",
+    "mode": "sum",
+    "dimensions": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9"
+    ],
+    "range": [
+      1,
+      5
+    ],
+    "license": null,
+    "source": "https://openpsychometrics.org/development/",
+    "sourceVersion": "AgentTune website f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+    "restoredFrom": {
+      "repository": "https://github.com/bernardjhuang/agenttune-website",
+      "commit": "f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+      "path": "resources/scoring/questions.json",
+      "sha256": "e9c7c05fcae2c9c00c4a9994f09eca6d00be1d0c63b55ad9cf6db3efca9fd333"
+    },
+    "anchors": [
+      "Disagree",
+      "Slightly disagree",
+      "Neutral",
+      "Slightly agree",
+      "Agree"
+    ],
+    "instructions": "Choose the response that best describes you. Answer every item; scores describe this adaptation and are not a diagnosis. Review any suggested communication preferences before using them.",
+    "adaptations": [
+      "Preserves the previous AgentTune website wording, display order, keys and response anchors. This is a versioned AgentTune adaptation, not an unmodified publisher edition.",
+      "Uses the historical 36-item grouped adaptation. Items 15 and 32 retain substitutions relative to upstream items 22 and 35. Anchors preserve the website labels, which differ from the older Markdown specification."
+    ],
+    "items": [
+      {
+        "id": "enneagram-01",
+        "displayOrder": 1,
+        "text": "I am a perfectionist.",
+        "dimension": "1",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-02",
+        "displayOrder": 2,
+        "text": "I strive for efficiency.",
+        "dimension": "1",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-03",
+        "displayOrder": 3,
+        "text": "I often have to redo other people's work.",
+        "dimension": "1",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-04",
+        "displayOrder": 4,
+        "text": "I keep my belongings in order.",
+        "dimension": "1",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-05",
+        "displayOrder": 5,
+        "text": "My relationships with others are what my life is about.",
+        "dimension": "2",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-06",
+        "displayOrder": 6,
+        "text": "I have difficulty saying no.",
+        "dimension": "2",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-07",
+        "displayOrder": 7,
+        "text": "I get lots of satisfaction from helping others achieve their goals.",
+        "dimension": "2",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-08",
+        "displayOrder": 8,
+        "text": "I put family first.",
+        "dimension": "2",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-09",
+        "displayOrder": 9,
+        "text": "I put work first.",
+        "dimension": "3",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-10",
+        "displayOrder": 10,
+        "text": "I like to stand out.",
+        "dimension": "3",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-11",
+        "displayOrder": 11,
+        "text": "It is good to wake up to a full day of planned activities.",
+        "dimension": "3",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-12",
+        "displayOrder": 12,
+        "text": "Money is important to my happiness.",
+        "dimension": "3",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-13",
+        "displayOrder": 13,
+        "text": "I daydream about being in love.",
+        "dimension": "4",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-14",
+        "displayOrder": 14,
+        "text": "I really enjoy feeling bittersweet.",
+        "dimension": "4",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-15",
+        "displayOrder": 15,
+        "text": "I get deeply immersed in music.",
+        "dimension": "4",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-16",
+        "displayOrder": 16,
+        "text": "I side with the rebels over the establishment.",
+        "dimension": "4",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-17",
+        "displayOrder": 17,
+        "text": "I have a hard time showing emotions.",
+        "dimension": "5",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-18",
+        "displayOrder": 18,
+        "text": "I spend hours alone with my hobbies.",
+        "dimension": "5",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-19",
+        "displayOrder": 19,
+        "text": "I spend most of my time trying to understand things.",
+        "dimension": "5",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-20",
+        "displayOrder": 20,
+        "text": "I like mental challenges.",
+        "dimension": "5",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-21",
+        "displayOrder": 21,
+        "text": "Fear of being taken advantage of keeps me from being more trusting.",
+        "dimension": "6",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-22",
+        "displayOrder": 22,
+        "text": "I get input from others before I make a decision.",
+        "dimension": "6",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-23",
+        "displayOrder": 23,
+        "text": "I conform.",
+        "dimension": "6",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-24",
+        "displayOrder": 24,
+        "text": "I am loyal.",
+        "dimension": "6",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-25",
+        "displayOrder": 25,
+        "text": "I must always be having new experiences.",
+        "dimension": "7",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-26",
+        "displayOrder": 26,
+        "text": "I can keep a conversation going with anyone about anything.",
+        "dimension": "7",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-27",
+        "displayOrder": 27,
+        "text": "I am uninhibited.",
+        "dimension": "7",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-28",
+        "displayOrder": 28,
+        "text": "I always try to break the tension with a good joke.",
+        "dimension": "7",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-29",
+        "displayOrder": 29,
+        "text": "I naturally emerge as a leader.",
+        "dimension": "8",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-30",
+        "displayOrder": 30,
+        "text": "I like a conversation where no one agrees.",
+        "dimension": "8",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-31",
+        "displayOrder": 31,
+        "text": "I want people to tell me the truth, not spare my feelings.",
+        "dimension": "8",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-32",
+        "displayOrder": 32,
+        "text": "I come up with good solutions.",
+        "dimension": "8",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-33",
+        "displayOrder": 33,
+        "text": "When other people are arguing, I leave the room.",
+        "dimension": "9",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-34",
+        "displayOrder": 34,
+        "text": "I keep my thoughts to myself to prevent trouble.",
+        "dimension": "9",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-35",
+        "displayOrder": 35,
+        "text": "I am very accepting and flexible.",
+        "dimension": "9",
+        "reverse": false
+      },
+      {
+        "id": "enneagram-36",
+        "displayOrder": 36,
+        "text": "I avoid confrontation.",
+        "dimension": "9",
+        "reverse": false
+      }
+    ],
+    "classification": "highest",
+    "definitionHash": "d90de028891ff390919d136d983015668e5f9e82c1cb8b0412d862bf0ba42e14"
+  },
+  {
+    "id": "agenttune-mbti-legacy",
+    "version": "1.0.0",
+    "route": "mbti",
+    "title": "MBTI-style — AgentTune OEJTS adaptation",
+    "mode": "bipolar",
+    "dimensions": [
+      "EI",
+      "SN",
+      "TF",
+      "JP"
+    ],
+    "range": [
+      1,
+      5
+    ],
+    "license": "CC-BY-NC-SA-4.0",
+    "source": "https://openpsychometrics.org/tests/OJTS/development/OEJTS1.2.pdf",
+    "sourceVersion": "AgentTune website f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+    "restoredFrom": {
+      "repository": "https://github.com/bernardjhuang/agenttune-website",
+      "commit": "f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+      "path": "resources/scoring/questions.json",
+      "sha256": "e9c7c05fcae2c9c00c4a9994f09eca6d00be1d0c63b55ad9cf6db3efca9fd333"
+    },
+    "anchors": [
+      "Strongly first statement",
+      "Lean first statement",
+      "Neutral",
+      "Lean second statement",
+      "Strongly second statement"
+    ],
+    "instructions": "Choose the response that best describes you. Answer every item; scores describe this adaptation and are not a diagnosis. Review any suggested communication preferences before using them.",
+    "adaptations": [
+      "Preserves the previous AgentTune website wording, display order, keys and response anchors. This is a versioned AgentTune adaptation, not an unmodified publisher edition.",
+      "Item 1 retains the historical substituted second pole. Tied axes remain unresolved unless the user explicitly supplies a preference; preferences are not scored evidence."
+    ],
+    "items": [
+      {
+        "id": "mbti-01",
+        "displayOrder": 1,
+        "first": "I make lists",
+        "second": "I just put stuff wherever",
+        "dimension": "JP",
+        "low": "J",
+        "high": "P"
+      },
+      {
+        "id": "mbti-02",
+        "displayOrder": 2,
+        "first": "I am skeptical",
+        "second": "I want to believe",
+        "dimension": "TF",
+        "low": "T",
+        "high": "F"
+      },
+      {
+        "id": "mbti-03",
+        "displayOrder": 3,
+        "first": "I get bored when I'm alone",
+        "second": "I need time alone",
+        "dimension": "EI",
+        "low": "E",
+        "high": "I"
+      },
+      {
+        "id": "mbti-04",
+        "displayOrder": 4,
+        "first": "I accept things as they are",
+        "second": "I'm unsatisfied with the way things are",
+        "dimension": "SN",
+        "low": "S",
+        "high": "N"
+      },
+      {
+        "id": "mbti-05",
+        "displayOrder": 5,
+        "first": "I keep my room clean",
+        "second": "I just put stuff wherever",
+        "dimension": "JP",
+        "low": "J",
+        "high": "P"
+      },
+      {
+        "id": "mbti-06",
+        "displayOrder": 6,
+        "first": "I think \"robotic\" is an insult",
+        "second": "I strive to have a mechanical mind",
+        "dimension": "TF",
+        "low": "F",
+        "high": "T"
+      },
+      {
+        "id": "mbti-07",
+        "displayOrder": 7,
+        "first": "I'm energetic",
+        "second": "I'm mellow",
+        "dimension": "EI",
+        "low": "E",
+        "high": "I"
+      },
+      {
+        "id": "mbti-08",
+        "displayOrder": 8,
+        "first": "I prefer multiple choice tests",
+        "second": "I prefer essay answers",
+        "dimension": "SN",
+        "low": "S",
+        "high": "N"
+      },
+      {
+        "id": "mbti-09",
+        "displayOrder": 9,
+        "first": "I'm chaotic",
+        "second": "I'm organized",
+        "dimension": "JP",
+        "low": "P",
+        "high": "J"
+      },
+      {
+        "id": "mbti-10",
+        "displayOrder": 10,
+        "first": "I'm easily hurt",
+        "second": "I'm thick-skinned",
+        "dimension": "TF",
+        "low": "F",
+        "high": "T"
+      },
+      {
+        "id": "mbti-11",
+        "displayOrder": 11,
+        "first": "I work best in groups",
+        "second": "I work best alone",
+        "dimension": "EI",
+        "low": "E",
+        "high": "I"
+      },
+      {
+        "id": "mbti-12",
+        "displayOrder": 12,
+        "first": "I focus on the present",
+        "second": "I focus on the future",
+        "dimension": "SN",
+        "low": "S",
+        "high": "N"
+      },
+      {
+        "id": "mbti-13",
+        "displayOrder": 13,
+        "first": "I plan far ahead",
+        "second": "I plan at the last minute",
+        "dimension": "JP",
+        "low": "J",
+        "high": "P"
+      },
+      {
+        "id": "mbti-14",
+        "displayOrder": 14,
+        "first": "I want people's respect",
+        "second": "I want their love",
+        "dimension": "TF",
+        "low": "T",
+        "high": "F"
+      },
+      {
+        "id": "mbti-15",
+        "displayOrder": 15,
+        "first": "Parties wear me out",
+        "second": "Parties fire me up",
+        "dimension": "EI",
+        "low": "I",
+        "high": "E"
+      },
+      {
+        "id": "mbti-16",
+        "displayOrder": 16,
+        "first": "I try to fit in",
+        "second": "I try to stand out",
+        "dimension": "SN",
+        "low": "S",
+        "high": "N"
+      },
+      {
+        "id": "mbti-17",
+        "displayOrder": 17,
+        "first": "I keep my options open",
+        "second": "I commit",
+        "dimension": "JP",
+        "low": "P",
+        "high": "J"
+      },
+      {
+        "id": "mbti-18",
+        "displayOrder": 18,
+        "first": "I want to be good at fixing things",
+        "second": "I want to be good at fixing people",
+        "dimension": "TF",
+        "low": "T",
+        "high": "F"
+      },
+      {
+        "id": "mbti-19",
+        "displayOrder": 19,
+        "first": "I talk more than I listen",
+        "second": "I listen more than I talk",
+        "dimension": "EI",
+        "low": "E",
+        "high": "I"
+      },
+      {
+        "id": "mbti-20",
+        "displayOrder": 20,
+        "first": "When describing an event, I tell what happened",
+        "second": "I tell what it meant",
+        "dimension": "SN",
+        "low": "S",
+        "high": "N"
+      },
+      {
+        "id": "mbti-21",
+        "displayOrder": 21,
+        "first": "I get work done right away",
+        "second": "I procrastinate",
+        "dimension": "JP",
+        "low": "J",
+        "high": "P"
+      },
+      {
+        "id": "mbti-22",
+        "displayOrder": 22,
+        "first": "I follow my heart",
+        "second": "I follow my head",
+        "dimension": "TF",
+        "low": "F",
+        "high": "T"
+      },
+      {
+        "id": "mbti-23",
+        "displayOrder": 23,
+        "first": "I stay at home",
+        "second": "I go out on the town",
+        "dimension": "EI",
+        "low": "I",
+        "high": "E"
+      },
+      {
+        "id": "mbti-24",
+        "displayOrder": 24,
+        "first": "I want the big picture",
+        "second": "I want the details",
+        "dimension": "SN",
+        "low": "N",
+        "high": "S"
+      },
+      {
+        "id": "mbti-25",
+        "displayOrder": 25,
+        "first": "I improvise",
+        "second": "I prepare",
+        "dimension": "JP",
+        "low": "P",
+        "high": "J"
+      },
+      {
+        "id": "mbti-26",
+        "displayOrder": 26,
+        "first": "I base morality on justice",
+        "second": "I base morality on compassion",
+        "dimension": "TF",
+        "low": "T",
+        "high": "F"
+      },
+      {
+        "id": "mbti-27",
+        "displayOrder": 27,
+        "first": "It's hard for me to yell loudly",
+        "second": "Yelling comes naturally to me",
+        "dimension": "EI",
+        "low": "I",
+        "high": "E"
+      },
+      {
+        "id": "mbti-28",
+        "displayOrder": 28,
+        "first": "I'm theoretical",
+        "second": "I'm empirical",
+        "dimension": "SN",
+        "low": "N",
+        "high": "S"
+      },
+      {
+        "id": "mbti-29",
+        "displayOrder": 29,
+        "first": "I work hard",
+        "second": "I play hard",
+        "dimension": "JP",
+        "low": "J",
+        "high": "P"
+      },
+      {
+        "id": "mbti-30",
+        "displayOrder": 30,
+        "first": "I'm uncomfortable with emotions",
+        "second": "I value emotions",
+        "dimension": "TF",
+        "low": "T",
+        "high": "F"
+      },
+      {
+        "id": "mbti-31",
+        "displayOrder": 31,
+        "first": "I like to perform in front of people",
+        "second": "I avoid public speaking",
+        "dimension": "EI",
+        "low": "E",
+        "high": "I"
+      },
+      {
+        "id": "mbti-32",
+        "displayOrder": 32,
+        "first": "I like to know \"who, what, when\"",
+        "second": "I like to know \"why\"",
+        "dimension": "SN",
+        "low": "S",
+        "high": "N"
+      }
+    ],
+    "pairs": {
+      "EI": [
+        "E",
+        "I"
+      ],
+      "SN": [
+        "S",
+        "N"
+      ],
+      "TF": [
+        "T",
+        "F"
+      ],
+      "JP": [
+        "J",
+        "P"
+      ]
+    },
+    "definitionHash": "f6a4a50959c1a27c15274360f14b54b16c848408de96b6964b286262e65aed07"
   }
 ]
