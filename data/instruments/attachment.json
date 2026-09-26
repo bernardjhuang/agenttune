@@ -1,0 +1,292 @@
+{
+  "id": "agenttune-attachment-legacy",
+  "version": "1.0.0",
+  "route": "attachment",
+  "title": "Attachment — AgentTune ECR-R adaptation",
+  "mode": "mean",
+  "dimensions": [
+    "anxiety",
+    "avoidance"
+  ],
+  "range": [
+    1,
+    7
+  ],
+  "license": "LicenseRef-ECRR-Author-Terms",
+  "source": "https://labs.psychology.illinois.edu/~rcfraley/measures/ecrr.htm",
+  "sourceVersion": "AgentTune website f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+  "restoredFrom": {
+    "repository": "https://github.com/bernardjhuang/agenttune-website",
+    "commit": "f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+    "path": "resources/scoring/questions.json",
+    "sha256": "e9c7c05fcae2c9c00c4a9994f09eca6d00be1d0c63b55ad9cf6db3efca9fd333"
+  },
+  "anchors": [
+    "Strongly disagree",
+    "Disagree",
+    "Slightly disagree",
+    "Neutral",
+    "Slightly agree",
+    "Agree",
+    "Strongly agree"
+  ],
+  "instructions": "Choose the response that best describes you. Answer every item; scores describe this adaptation and are not a diagnosis. Review any suggested communication preferences before using them.",
+  "adaptations": [
+    "Preserves the previous AgentTune website wording, display order, keys and response anchors. This is a versioned AgentTune adaptation, not an unmodified publisher edition.",
+    "The four category labels use a heuristic midpoint split at 4; a value of exactly 4 falls on the low side. Continuous scores remain primary."
+  ],
+  "items": [
+    {
+      "id": "attachment-01",
+      "displayOrder": 1,
+      "text": "I'm afraid that I will lose my partner's love.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-02",
+      "displayOrder": 2,
+      "text": "I often worry that my partner will not want to stay with me.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-03",
+      "displayOrder": 3,
+      "text": "I often worry that my partner doesn't really love me.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-04",
+      "displayOrder": 4,
+      "text": "I worry that romantic partners won't care about me as much as I care about them.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-05",
+      "displayOrder": 5,
+      "text": "I often wish that my partner's feelings for me were as strong as my feelings for them.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-06",
+      "displayOrder": 6,
+      "text": "I worry a lot about my relationships.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-07",
+      "displayOrder": 7,
+      "text": "When my partner is out of sight, I worry that they might become interested in someone else.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-08",
+      "displayOrder": 8,
+      "text": "When I show my feelings for romantic partners, I'm afraid they will not feel the same about me.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-09",
+      "displayOrder": 9,
+      "text": "I rarely worry about my partner leaving me.",
+      "dimension": "anxiety",
+      "reverse": true
+    },
+    {
+      "id": "attachment-10",
+      "displayOrder": 10,
+      "text": "My romantic partner makes me doubt myself.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-11",
+      "displayOrder": 11,
+      "text": "I do not often worry about being abandoned.",
+      "dimension": "anxiety",
+      "reverse": true
+    },
+    {
+      "id": "attachment-12",
+      "displayOrder": 12,
+      "text": "I find that my partner(s) don't want to get as close as I would like.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-13",
+      "displayOrder": 13,
+      "text": "Sometimes romantic partners change their feelings about me for no apparent reason.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-14",
+      "displayOrder": 14,
+      "text": "My desire to be very close sometimes scares people away.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-15",
+      "displayOrder": 15,
+      "text": "I'm afraid that once a romantic partner gets to know me, they won't like who I really am.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-16",
+      "displayOrder": 16,
+      "text": "It makes me mad that I don't get the affection and support I need from my partner.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-17",
+      "displayOrder": 17,
+      "text": "I worry that I won't measure up to other people.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-18",
+      "displayOrder": 18,
+      "text": "My partner only seems to notice me when I'm angry.",
+      "dimension": "anxiety",
+      "reverse": false
+    },
+    {
+      "id": "attachment-19",
+      "displayOrder": 19,
+      "text": "I prefer not to show a partner how I feel deep down.",
+      "dimension": "avoidance",
+      "reverse": false
+    },
+    {
+      "id": "attachment-20",
+      "displayOrder": 20,
+      "text": "I feel comfortable sharing my private thoughts and feelings with my partner.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-21",
+      "displayOrder": 21,
+      "text": "I find it difficult to allow myself to depend on romantic partners.",
+      "dimension": "avoidance",
+      "reverse": false
+    },
+    {
+      "id": "attachment-22",
+      "displayOrder": 22,
+      "text": "I am very comfortable being close to romantic partners.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-23",
+      "displayOrder": 23,
+      "text": "I don't feel comfortable opening up to romantic partners.",
+      "dimension": "avoidance",
+      "reverse": false
+    },
+    {
+      "id": "attachment-24",
+      "displayOrder": 24,
+      "text": "I prefer not to be too close to romantic partners.",
+      "dimension": "avoidance",
+      "reverse": false
+    },
+    {
+      "id": "attachment-25",
+      "displayOrder": 25,
+      "text": "I get uncomfortable when a romantic partner wants to be very close.",
+      "dimension": "avoidance",
+      "reverse": false
+    },
+    {
+      "id": "attachment-26",
+      "displayOrder": 26,
+      "text": "I find it relatively easy to get close to my partner.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-27",
+      "displayOrder": 27,
+      "text": "It's not difficult for me to get close to my partner.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-28",
+      "displayOrder": 28,
+      "text": "I usually discuss my problems and concerns with my partner.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-29",
+      "displayOrder": 29,
+      "text": "It helps to turn to my romantic partner in times of need.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-30",
+      "displayOrder": 30,
+      "text": "I tell my partner just about everything.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-31",
+      "displayOrder": 31,
+      "text": "I talk things over with my partner.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-32",
+      "displayOrder": 32,
+      "text": "I am nervous when partners get too close to me.",
+      "dimension": "avoidance",
+      "reverse": false
+    },
+    {
+      "id": "attachment-33",
+      "displayOrder": 33,
+      "text": "I feel comfortable depending on romantic partners.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-34",
+      "displayOrder": 34,
+      "text": "I find it easy to depend on romantic partners.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-35",
+      "displayOrder": 35,
+      "text": "It's easy for me to be affectionate with my partner.",
+      "dimension": "avoidance",
+      "reverse": true
+    },
+    {
+      "id": "attachment-36",
+      "displayOrder": 36,
+      "text": "My partner really understands me and my needs.",
+      "dimension": "avoidance",
+      "reverse": true
+    }
+  ]
+}

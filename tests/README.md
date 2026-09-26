@@ -1,7 +1,11 @@
-# Optional questionnaires
+# Personality questionnaires
 
-The current core release includes the [IPIP Big Five adaptation](big-five.md). Complete all items for a final score. Missing valid responses produce an incomplete result; invalid values are rejected. Do not impute missing answers or add follow-up preferences to measured scores.
+All five AgentTune adaptations are available. Complete each questionnaire to view its scores and explore communication preferences.
 
-Other framework pages explain availability: [MBTI](mbti.md), [Enneagram](enneagram.md), [DISC](disc.md), [attachment](attachment.md). Their questionnaire text is excluded pending verified rights for the intended use. [Third-party notices](../THIRD_PARTY_NOTICES.md) apply.
+- [mbti](./mbti.md)
+- [enneagram](./enneagram.md)
+- [disc](./disc.md)
+- [attachment](./attachment.md)
+- [big-five](./big-five.md)
 
-Questionnaires are optional. [Choose communication preferences directly](https://agent-tune.com/tools/custom-instructions-generator).
+These are self-report exercises, not diagnoses. [Instrument-specific terms](../THIRD_PARTY_NOTICES.md) apply; not all questionnaire content is MIT. The four restored editions preserve the previous website wording and are explicitly versioned as legacy adaptations.

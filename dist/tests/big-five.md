@@ -13,7 +13,7 @@ Describe your typical behavior. Complete all 50 items. These are questionnaire s
 
 ## Items
 
-| ID | Statement (I…) | Dimension | Reverse |
+| ID | Statement | Dimension | Reverse |
 |---|---|---|---|
 | ipip50-01 | Am the life of the party. | E | No |
 | ipip50-02 | Feel little concern for others. | A | Yes |
@@ -67,10 +67,12 @@ Describe your typical behavior. Complete all 50 items. These are questionnaire s
 | ipip50-50 | Am full of ideas. | O | No |
 
 ## Scoring
-Require all 50 valid integer responses. Reverse keyed items use 6 minus the response. Sum each dimension's ten scored items (10–50) and divide by ten for its item mean (1–5). Return incomplete for missing responses; reject duplicate IDs and invalid values. Do not impute. These scores do not establish population percentiles, a diagnosis or an instruction priority. Choose communication preferences explicitly.
+Require all 50 valid integer responses. Missing records return incomplete; duplicate IDs, unknown IDs and invalid values are rejected. No imputation. Reverse keyed responses using 6 minus the raw value. Sum each dimension’s ten scored responses (10–50) and divide by ten for its mean (1–5). These are raw scores, not population percentiles. No instruction is selected automatically.
 
-## Source and adaptations
-[IPIP source](https://ipip.ori.org/newBigFive5broadKey.htm) · [Public-domain terms](https://ipip.ori.org/newPermission.htm).
+Scores do not authorize installation or override explicit communication preferences. Review suggested templates before using them.
+
+## Source, terms and adaptations
+[Source](https://ipip.ori.org/newBigFive5broadKey.htm). Instrument content is subject to separate publisher terms; see [third-party notices](https://agent-tune.com/resources/content/THIRD_PARTY_NOTICES.md). Operational availability does not grant unrestricted redistribution rights.
 
 - Neuroticism is scored in the opposite orientation to the upstream Emotional Stability factor.
 - O is displayed as Openness; the upstream factor is Intellect/Imagination.

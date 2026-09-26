@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 — 2026-09-26
+
+Restores MBTI-style, Enneagram, DISC and attachment questionnaire adaptations and full specifications at the site owner’s request. Their original website items, ordering and anchors are pinned as legacy edition 1.0.0. Source terms and unresolved reuse questions remain recorded separately from operational availability. Big Five, preference safeguards, strict input validation and checksum verification are retained.
+
 ## 1.0.0 — 2026-09-26
 
 First versioned content release. Rewrites all 43 templates as optional communication preferences with shared accuracy and scope rules. Adds instrument-specific rights metadata, deterministic exports, checksums and a strict local scoring API. Only the rights-reviewed IPIP adaptation is available for current administration; other questionnaire routes explain their status.

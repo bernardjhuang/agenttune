@@ -26,7 +26,7 @@ Combine only rules you want. When two rules conflict, choose explicitly rather t
 
 ## Optional questionnaires
 
-The current core release includes a [50-item IPIP Big Five adaptation](tests/big-five.md). It returns raw dimension totals and item means. It does not return population percentiles or select instructions automatically. Review the [availability and rights record](data/instrument-rights.json) for other instruments. Their explanatory pages and communication templates remain available; their questionnaires are excluded until the intended reuse is covered by verified terms.
+The current release includes five interactive questionnaire adaptations: [MBTI-style](tests/mbti.md), [Enneagram](tests/enneagram.md), [DISC](tests/disc.md), [attachment](tests/attachment.md) and [IPIP Big Five](tests/big-five.md). The Big Five adaptation returns raw dimension totals and item means. It does not return population percentiles or select instructions automatically. Review the [availability and rights record](data/instrument-rights.json) for other instruments. All five questionnaires are available. Their source terms remain separate; availability does not establish unrestricted reuse rights.
 
 See [third-party notices](THIRD_PARTY_NOTICES.md) before reusing instrument material. Original AgentTune code and preference templates are MIT licensed; that does not make every third-party instrument MIT or commercially reusable.
 
@@ -36,7 +36,7 @@ This repository owns the canonical content. The website consumes a pinned releas
 
 ```js
 const { score, scoreOrdered } = require('./dist/score.js');
-const instrument = require('./dist/instruments.json')[0];
+const instrument = require('./dist/instruments.json').find(d => d.route === 'big-five');
 const result = score({
   instrumentId: instrument.id,
   instrumentVersion: instrument.version,

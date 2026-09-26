@@ -1,11 +1,11 @@
 {
-  "version": "1.0.0",
+  "version": "1.1.0",
   "profile": "core",
   "source": "https://github.com/bernardjhuang/agenttune",
   "files": {
     "CHANGELOG.md": {
-      "sha256": "1db0952e60659669d203dfbe2c35986314e47dea7091e7b01603502fcb8912a5",
-      "bytes": 1247
+      "sha256": "3ab56df8760180ef856c4e4623e2234aaa77bc38dbca23133935053b9fb063e8",
+      "bytes": 1692
     },
     "compact-tunings.js": {
       "sha256": "b5b4f8ca60b4054e80eaf6f3729780a7186a1f23cc05e802ef5c5021f5f38a8e",
@@ -16,12 +16,12 @@
       "bytes": 5588
     },
     "instrument-rights.json": {
-      "sha256": "2d4cb0b26d0cd0452e8e0101de04920fde58cd1ce6c4681ce11b445f78438256",
-      "bytes": 5250
+      "sha256": "f0cb1cd52c14670f7cf650294b513b5798706392a4ac18531a6aa3916632c3fc",
+      "bytes": 6249
     },
     "instruments.json": {
-      "sha256": "61cf9a894520414d0607cea6cf32cfde167b0672606d295dd16661d2853949a9",
-      "bytes": 13633
+      "sha256": "9eac0ba80af15b326a396b8308fe330bd3bb3069a1b7d1ad0f3491b704c2aaa2",
+      "bytes": 44344
     },
     "legacy-provenance.json": {
       "sha256": "2a49b3f67495207802ff74dd361181d933d9b51d03afd74d6a6eddae3ac4305e",
@@ -32,32 +32,32 @@
       "bytes": 1070
     },
     "score.js": {
-      "sha256": "4dbdd08ff973e63366edc551311c27ccc02a3b01fa8df25124cf2aeed5afc71d",
-      "bytes": 13765
+      "sha256": "bf3706344ba61c00030a933a8a7fdf0d458e6d71fcfeca4493d003268b5e57b5",
+      "bytes": 28038
     },
     "tests/attachment.md": {
-      "sha256": "2138e54a22a7435995d1728c88cb6b88da317f88ede6b3a98f28c9a136695783",
-      "bytes": 769
+      "sha256": "4b4af8211d627e1adf003f44cc4e3fcab8b531da2410165bf71512fcf211d7f5",
+      "bytes": 5361
     },
     "tests/big-five.md": {
-      "sha256": "81ef21b12da4c2300f0ddf1a7ba044ec1bf549373b8eb8e7bb197c7580a979e2",
-      "bytes": 4015
+      "sha256": "0758bbb4a96ca19d616456a079ddef32baa95dc1ede187b0006711d42c0e1fdc",
+      "bytes": 4278
     },
     "tests/disc.md": {
-      "sha256": "c1a7b19b6b75386e9d61aac2a797d6a2a2653b2cdedc571a047e28cc7d83601f",
-      "bytes": 739
+      "sha256": "4a9093092cf44f47a66a63782aec34ba5b8569959cb2fd56d84275b5ddb5a2cd",
+      "bytes": 2470
     },
     "tests/enneagram.md": {
-      "sha256": "13af5e00d9a8c99fb9d8ecbc8e0378fa8810de50d53bfc78d01d725faed109fb",
-      "bytes": 728
+      "sha256": "cef9816a564d2e741e2fc03d84aad8c09f18de6be9e51af881e15f46c46da982",
+      "bytes": 4174
     },
     "tests/mbti.md": {
-      "sha256": "e2ea61b0d42cd8b0139c6d2424d1d43ea6171c00c9ce5ea8215412bcbf84063a",
-      "bytes": 725
+      "sha256": "068a05071cba4527b39e77f9fbcb66c8cbc5d4c1d0168d13769d935e88bac070",
+      "bytes": 4315
     },
     "THIRD_PARTY_NOTICES.md": {
-      "sha256": "96fb747e33cf58dc46b8045861dbf54b51719686d4e23c32be1a069575a60a45",
-      "bytes": 1615
+      "sha256": "702539a92555003a1ef34770fe1eb9afe122c717a98d276a5f0d116dfe5632f1",
+      "bytes": 2023
     },
     "tunings/attachment/anxious.md": {
       "sha256": "fcfa8601a097f103969038fc4c11c9652ec27f1c658c643d63213f5b8688a826",
