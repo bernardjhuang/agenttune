@@ -1,0 +1,110 @@
+{
+  "status": "legacy_provenance",
+  "library_commit": "ad03009d7334b96a1205e81faf275509006d0f09",
+  "website_commit": "f37b85ca2dea8e27a1ec27ab1964843805e1c6a5",
+  "website_items_hash_encoding": "UTF-8 JSON sorted keys, compact separators, ASCII escaping; hashes identify captured structures, not a finalized release format.",
+  "legacy_instruments": [
+    {
+      "legacy_route": "mbti",
+      "library_spec_sha256": "8a5fb6204694c490d3d2fe2a026a8b4462fd6caac6ab2d0e305b2a33564a989e",
+      "website_items_sha256": "e03aa837979c856f03f7cfcc2051179510f45e69878071c59a0317e721ebd95c",
+      "item_count": 32,
+      "response_range": [
+        1,
+        5
+      ],
+      "migration_rule": "Different administered wording, anchors, order, instructions or scoring policy receive distinct version metadata; the legacy route alone is not an instrument identity.",
+      "adaptation_id": "agenttune-mbti-legacy"
+    },
+    {
+      "legacy_route": "big-five",
+      "library_spec_sha256": "1c03ff3e6ad78f7e933c2fe3426498f1e84291446071520b3ee2262f4e523828",
+      "website_items_sha256": "5f4cb5d8f660f2d8d1a5f2f27faf0be7d5fa16dc698d585c4849d586e35d6021",
+      "item_count": 50,
+      "response_range": [
+        1,
+        5
+      ],
+      "migration_rule": "Different administered wording, anchors, order, instructions or scoring policy receive distinct version metadata; the legacy route alone is not an instrument identity.",
+      "adaptation_id": "agenttune-big-five-legacy"
+    },
+    {
+      "legacy_route": "disc",
+      "library_spec_sha256": "52acaf61773215fb45896bafed611912bb61e4c983eff46a60f48888a264ec15",
+      "website_items_sha256": "04cf6fe31dcd5fa7537d8ecb3156ce35618877967ccd375df9423f5fd6550e89",
+      "item_count": 16,
+      "response_range": [
+        1,
+        5
+      ],
+      "migration_rule": "Different administered wording, anchors, order, instructions or scoring policy receive distinct version metadata; the legacy route alone is not an instrument identity.",
+      "adaptation_id": "agenttune-disc-legacy"
+    },
+    {
+      "legacy_route": "enneagram",
+      "library_spec_sha256": "ef688943c0f4e2f63b6c9460ffb9810342c3a4cf9682b3cb0c8892bef4e0f274",
+      "website_items_sha256": "846fe753f85e6e3cef0daad0c88c6e629a9dc264efcc2b872af5f3c018d54cac",
+      "item_count": 36,
+      "response_range": [
+        1,
+        5
+      ],
+      "migration_rule": "Different administered wording, anchors, order, instructions or scoring policy receive distinct version metadata; the legacy route alone is not an instrument identity.",
+      "adaptation_id": "agenttune-enneagram-legacy"
+    },
+    {
+      "legacy_route": "attachment",
+      "library_spec_sha256": "1bf07eca846cdd2dc61fbe02fc322793d9b19c2cd3903beb41b11903e93929d7",
+      "website_items_sha256": "bfd03c1d959bca7a7bd0058f47e225217a8e02660eab526c780d77b44ef7585a",
+      "item_count": 36,
+      "response_range": [
+        1,
+        7
+      ],
+      "migration_rule": "Different administered wording, anchors, order, instructions or scoring policy receive distinct version metadata; the legacy route alone is not an instrument identity.",
+      "adaptation_id": "agenttune-attachment-legacy"
+    }
+  ],
+  "confirmed_content_differences": [
+    {
+      "instrument": "mbti",
+      "repository_item": 1,
+      "field": "second_pole",
+      "upstream_item": 1,
+      "issue": "Uses the second pole from item 5 instead of upstream item 1."
+    },
+    {
+      "instrument": "enneagram",
+      "repository_item": 15,
+      "upstream_item": 22,
+      "type": 4,
+      "issue": "Substituted statement."
+    },
+    {
+      "instrument": "enneagram",
+      "repository_item": 32,
+      "upstream_item": 35,
+      "type": 8,
+      "issue": "Substituted statement."
+    }
+  ],
+  "additional_review": [
+    "OEPS grouped versus upstream interleaved display order",
+    "All item wording and reverse keys",
+    "Response anchors in each distribution",
+    "Administration instructions",
+    "Tie and optional wing/blend policies"
+  ],
+  "upstream_source_hashes": {
+    "OEJTS1.2-source.pdf": "813844c6ebbd323545ec67caf1a056a07518fea485f0cc6a56a34508fae09478",
+    "OEPS-v1-source.odt": "53bd99d02b69968ad3c8a3259deb175f4c8a5f539fae0339006f6e188eb25b88"
+  },
+  "research_distribution_rule": "Preserve original artifacts locally and maintain correction/provenance metadata. Public redistribution of question text is separately governed by verified rights; preserving history does not authorize redistributing it.",
+  "historical_response_rule": "Never relabel or rescore old response vectors as answers to revised wording. Any reanalysis must identify the exact legacy instrument and scorer.",
+  "research_files_original_sha256": {
+    "research/data/september-2026-instruments.json": "e9c7c05fcae2c9c00c4a9994f09eca6d00be1d0c63b55ad9cf6db3efca9fd333",
+    "research/data/september-2026-responses.json": "00e0e88e475fc05ad2d0903fbc18766e0fbe497ee28e7ed9acbc63d2a0fa00bb",
+    "research/data/september-2026-score.cjs": "97ce9a41c29ca7bd1c206e1c01e71dcff442ab7418b6dc1df55e06b66dde7c44",
+    "research/data/september-2026-protocols.json": "f2e77320df046f18536357364a9aa7c43dea01decd0822533d2af9460b9b2c2e"
+  }
+}

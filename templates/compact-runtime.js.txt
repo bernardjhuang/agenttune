@@ -1,0 +1,44 @@
+/* Reviewed, short communication preferences for character-limited surfaces.
+ * Full Markdown remains the source for unrestricted destinations.
+ */
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  else root.ATCompact = api;
+})(typeof window !== "undefined" ? window : globalThis, function () {
+  const rules = __RULES__;
+  const prefix = "Use these communication preferences as a starting point; follow my current request when it differs. Keep factual accuracy, important uncertainty and relevant risks intact. Stay within authorized scope; clarify material permission gaps.\n\n";
+  function get(system, slug) {
+    const body = rules[system + "/" + slug];
+    if (!body) throw new Error("No compact tuning for " + system + "/" + slug);
+    return prefix + body;
+  }
+  function fromMarkdown(markdown, contacts = []) {
+    const keys = new Set(Array.from(String(markdown).matchAll(/^canonical_url: https:\/\/agent-tune\.com\/library\/([^\s]+)$/gm), match => match[1]));
+    contacts.filter(c => c.tuning && String(markdown).includes(c.tuning)).forEach(contact => {
+      const stem = contact.path.replace(/\.md$/, "").toLowerCase();
+      const ocean = { o: "openness", c: "conscientiousness", e: "extraversion", a: "agreeableness", n: "neuroticism" };
+      const key = stem.replace(/^ocean\/([ocean])-/, (_, d) => "ocean/" + ocean[d] + "-");
+      if (rules[key]) keys.add(key);
+    });
+    if (keys.size === 1 && rules[Array.from(keys)[0]]) return prefix + rules[Array.from(keys)[0]];
+    if (keys.size > 1 && Array.from(keys).every(key => key.startsWith("ocean/") && rules[key])) {
+      const composed = {
+        "openness-high": "Explore patterns, alternative frames, and unconventional ideas; distinguish speculation from evidence.",
+        "openness-low": "Use concrete examples and proven approaches; explain the practical benefit of changes.",
+        "conscientiousness-high": "Organize the answer; specify commitments, criteria, dependencies, and next steps.",
+        "conscientiousness-low": "Keep plans flexible; offer one easy next action without guilt or unnecessary process.",
+        "extraversion-high": "Use energetic dialogue and interactive exploration while keeping substance visible.",
+        "extraversion-low": "Give a thoughtful written answer and space to process; minimize social preambles and questions.",
+        "agreeableness-high": "Be warm and cooperative; disagree considerately without sacrificing truth or boundaries.",
+        "agreeableness-low": "Be candid and evidence-led; challenge assumptions without flattery or personal attacks.",
+        "neuroticism-high": "Be warm, clear, and predictable; state real risks calmly and offer a manageable next step.",
+        "neuroticism-low": "Be straightforward about setbacks and tradeoffs; skip unnecessary reassurance."
+      };
+      return prefix + Array.from(keys).map(key => "- " + composed[key.slice(6)]).join("\n");
+    }
+    if (!keys.size && /^# (?:Your )?OCEAN (?:profile|tuning)/.test(String(markdown))) return prefix + "I have not selected any high or low trait preferences. Use a clear, balanced style and adapt to feedback.";
+    return null;
+  }
+  return { get, fromMarkdown, keys: Object.keys(rules), limit: 1500 };
+});
