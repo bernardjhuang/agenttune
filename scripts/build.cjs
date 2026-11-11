@@ -7,7 +7,8 @@ const profiles=require('../data/tunings.json'),rights=require('../data/instrumen
 const out=path.join(root,'dist');fs.rmSync(out,{recursive:true,force:true});
 const contract=read('data/contract.md');
 for(const p of profiles){
- const body=`# ${p.code} — communication preferences\n\nAn optional template to try and edit. This does not assert a personality type or diagnosis.\n\n## Communication style\n${p.preference}\n\n${contract}`;
+ const rulesBlock=Array.isArray(p.rules)&&p.rules.length?`\n\n## Operating rules\n${p.rules.map(r=>`- **${r.label}:** ${r.text}`).join('\n')}`:'';
+ const body=`# ${p.code} — communication preferences\n\n## Communication style\n${p.preference}${rulesBlock}\n\n${contract}`;
  write(p.path,body);write('dist/tunings/'+p.id+'.md',body);p.bodyPath='tunings/'+p.id+'.md';p.sha256=hash(body);
 }
 write('dist/tunings.json',json(profiles));
