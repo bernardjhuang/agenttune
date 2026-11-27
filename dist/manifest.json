@@ -1,11 +1,11 @@
 {
-  "version": "1.1.0",
+  "version": "1.1.1",
   "profile": "core",
   "source": "https://github.com/bernardjhuang/agenttune",
   "files": {
     "CHANGELOG.md": {
-      "sha256": "3ab56df8760180ef856c4e4623e2234aaa77bc38dbca23133935053b9fb063e8",
-      "bytes": 1692
+      "sha256": "6384073a2ff6f8f4d6a9599d097024075435eb18150f3a2541f6d301c709b536",
+      "bytes": 2216
     },
     "compact-tunings.js": {
       "sha256": "b5b4f8ca60b4054e80eaf6f3729780a7186a1f23cc05e802ef5c5021f5f38a8e",
@@ -16,7 +16,7 @@
       "bytes": 5588
     },
     "instrument-rights.json": {
-      "sha256": "f0cb1cd52c14670f7cf650294b513b5798706392a4ac18531a6aa3916632c3fc",
+      "sha256": "6fd28397aeaa8ee1e952657d890f249758aede7490c71ac54e51b8611efe95ba",
       "bytes": 6249
     },
     "instruments.json": {

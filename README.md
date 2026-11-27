@@ -1,42 +1,66 @@
 # AgentTune
 
-Editable communication preferences for AI assistants. Browse 43 templates, choose the rules that fit, and review them before adding them to your instructions. A personality label is optional; templates are editorial suggestions, not diagnoses or proven performance improvements.
+**Measure how AI models actually behave—and give any assistant clear, copy-paste communication rules.**
 
-[Website](https://agent-tune.com/) · [Preference builder](https://agent-tune.com/tools/custom-instructions-generator) · [Library](https://agent-tune.com/library) · [Research](https://agent-tune.com/research)
+AgentTune studies AI model personalities across `25` model families (`87` primary checkpoints / `93` tested), pairs the findings with `5` free personality tests, `10` browser tools, `53` practical setup guides, and this open repository of `43` editable tuning templates plus local test scoring.
+
+[Website](https://agent-tune.com/) · [Model Profiles](https://agent-tune.com/models/) · [Personality Atlas](https://agent-tune.com/research/ai-personality-rankings) · [Preference Builder](https://agent-tune.com/tools/custom-instructions-generator) · [Library](https://agent-tune.com/library/) · [Tests](https://agent-tune.com/tests/) · [Guides](https://agent-tune.com/guides/) · [Research](https://agent-tune.com/research) · [Site & Research Repo](https://github.com/bernardjhuang/agenttune-website)
+
+---
+
+## What we found across 25 AI model families
+
+Our latest benchmark tests `93` checkpoints across `25` proprietary and open-weight families (`87` primary checkpoints meeting the `>= 20`-run threshold; `6` sparse checkpoints excluded from rankings). Here is the short version:
+
+| Question | What the data shows | Go deeper |
+| --- | --- | --- |
+| **Do all AIs test as INTJ?** | Only **9 of 25** families clear our MBTI axis-tie guard (`7` test as **INTJ**, `2` test as **ISTJ**); **`16 of 25`** are border-heavy due to ties. | [AI MBTI Personalities](https://agent-tune.com/research/ai-mbti-personalities) |
+| **Survey persona vs. real behavior** | On open-ended `1×` behavior checks across all `25` flagships (`75` probes), models delivered **`75/75` answer-first directness** and **`0/75` groveling**, with **`1/75` sycophancy caving** (`Mistral Large 2512` `1/3`) and **`1/75` unsolicited preachiness** (`Gemini Pro / Neon` `1/3`). | [25 Model Profiles](https://agent-tune.com/models/) |
+| **The Cohere Command paradox** | `command-a` chose the midpoint on **100%** of `230` survey items (`30.0` across all Big Five domains, `XXXX`), yet scored **`3/3` directness** and **`0/3` caving** on behavior checks. | [Personality Atlas Overview](https://agent-tune.com/research/ai-personality-rankings) |
+
+Explore the cross-family Atlas by framework: [MBTI](https://agent-tune.com/research/ai-mbti-personalities) · [Enneagram](https://agent-tune.com/research/ai-enneagram-personalities) · [Big Five](https://agent-tune.com/research/ai-big-five-personalities) · [DISC](https://agent-tune.com/research/ai-disc-personalities) · [IPIP-HEXACO](https://agent-tune.com/research/ai-hexaco-personalities) · [Attachment Styles](https://agent-tune.com/research/ai-attachment-styles).
+
+*(Research datasets, runner scripts, CSVs, and the 36 empirical studies live in [bernardjhuang/agenttune-website](https://github.com/bernardjhuang/agenttune-website). This repository holds the canonical tuning library and local scoring engine.)*
+
+---
 
 ## Start with the behavior you want
 
-1. Describe your preferred level of detail, tone, structure and pushback in the preference builder, or browse a template below.
-2. Read and edit the actual rules. Your current request and explicit preferences take precedence. No questionnaire framework automatically outranks another.
-3. Add only the reviewed text to the intended conversation, account settings or project instructions. Preserve existing content; use a clearly marked block when editing a shared file.
-4. Reopen the destination to verify storage. Compare several new tasks to assess behavior; saved text alone does not prove that a model will follow it.
-5. To undo, remove only the added block. Do not delete an existing shared instruction file.
+Pick rules that fix real annoyances (filler, hedging, sycophancy, wall-of-text formatting)—whether or not you take a quiz first:
 
-Reading a resource does not authorize installation, an external action or a lasting change to preferences. Templates must preserve accuracy, material uncertainty and authorized scope.
+1. **Build custom instructions visually** with our [Preference Builder](https://agent-tune.com/tools/custom-instructions-generator) or browse all `10` [free tools](https://agent-tune.com/tools/).
+2. **Or pick a starting draft** from the `43` editable templates below (trim any line that doesn't match how you work):
+   - [MBTI-style preferences](mbti/README.md) (`16` templates)
+   - [Enneagram-style preferences](enneagram/README.md) (`9` templates)
+   - [DISC-style preferences](disc/README.md) (`4` templates)
+   - [Attachment-related preferences](attachment/README.md) (`4` templates)
+   - [Big Five / OCEAN preferences](ocean/README.md) (`10` templates)
+3. **Take a free quiz (optional):** Compare your own style with our `5` open [personality tests](https://agent-tune.com/tests/) ([MBTI](tests/mbti.md), [Enneagram](tests/enneagram.md), [DISC](tests/disc.md), [Attachment](tests/attachment.md), [IPIP Big Five](tests/big-five.md)).
+4. **Install safely:** Paste only reviewed rules into your chat settings or project instructions (use a bounded marker block when editing shared files), keep your explicit task instructions on top, and verify behavior across a few fresh chats.
 
-## Browse templates
+---
 
-- [MBTI-style preferences](mbti/README.md): 16 templates
-- [Enneagram-style preferences](enneagram/README.md): 9 templates
-- [DISC-style preferences](disc/README.md): 4 templates
-- [Attachment-related preferences](attachment/README.md): 4 templates
-- [OCEAN preferences](ocean/README.md): 10 templates
+## For AI agents & developers
 
-Combine only rules you want. When two rules conflict, choose explicitly rather than treating a score or framework as an instruction priority. The framework labels are navigation aids, not claims about every person who uses a label.
+AgentTune exposes machine-readable endpoints so agents can fetch benchmarks, rubrics, and templates without scraping HTML:
 
-## Optional questionnaires
+- **Stateless MCP server:** `https://agent-tune.com/mcp`
+  - Tools: `list_tunings`, `get_tuning`, `get_test_spec`, `list_resources`, `get_resource`, `get_free_tools`
+- **LLM discovery indexes:** [llms.txt](https://agent-tune.com/llms.txt) · [llms-full.txt](https://agent-tune.com/llms-full.txt) · [SKILL.md](https://agent-tune.com/SKILL.md)
+- **Clean Markdown & manifests:**
+  - Body-only tuning files: `/resources/tunings/<system>/<slug>.md`
+  - Full tuning catalog: [library/index.json](https://agent-tune.com/library/index.json)
+  - Pinned content manifest: [resources/content/manifest.json](https://agent-tune.com/resources/content/manifest.json)
+  - Platform install paths: [platforms.json](https://agent-tune.com/resources/platforms.json) · [install-protocol.md](https://agent-tune.com/resources/install-protocol.md)
 
-The current release includes five interactive questionnaire adaptations: [MBTI-style](tests/mbti.md), [Enneagram](tests/enneagram.md), [DISC](tests/disc.md), [attachment](tests/attachment.md) and [IPIP Big Five](tests/big-five.md). The Big Five adaptation returns raw dimension totals and item means. It does not return population percentiles or select instructions automatically. Review the [availability and rights record](data/instrument-rights.json) for other instruments. All five questionnaires are available. Their source terms remain separate; availability does not establish unrestricted reuse rights.
+### Local test scoring (`dist/score.js`)
 
-See [third-party notices](THIRD_PARTY_NOTICES.md) before reusing instrument material. Original AgentTune code and preference templates are MIT licensed; that does not make every third-party instrument MIT or commercially reusable.
-
-## Versioned content and local scoring
-
-This repository owns the canonical content. The website consumes a pinned release, not a runtime fetch from `main`. [dist/manifest.json](dist/manifest.json) gives the release version and SHA-256 of every exported artifact. [dist/instruments.json](dist/instruments.json) identifies the available definitions, item IDs, response anchors and definition hashes. Every scoring result identifies its instrument and scorer version.
+Run deterministic, offline scoring in Node or browser JS without sending answers anywhere:
 
 ```js
 const { score, scoreOrdered } = require('./dist/score.js');
 const instrument = require('./dist/instruments.json').find(d => d.route === 'big-five');
+
 const result = score({
   instrumentId: instrument.id,
   instrumentVersion: instrument.version,
@@ -46,24 +70,13 @@ const result = score({
 // scoreOrdered(id, version, answers) requires the exact complete item order.
 ```
 
-Valid partial responses return `incomplete`, with missing item IDs and no final score. Duplicate/unknown IDs, noninteger/out-of-range values and malformed responses return `invalid`. Missing answers are never silently imputed. Raw scores are separate from a user's subsequent choice of communication preferences. Keep personal responses local and out of public pull requests.
+Valid partial inputs return `incomplete` (with `missing` item IDs and no imputed score). Malformed inputs, duplicates, or unknown IDs return `invalid`.
 
-Browser: load `dist/score.js` to use `AgentTuneScoring`. It contains scoring keys for the approved instrument without embedding question wording. The original generic engine is also available separately as `dist/engine.js`; users are responsible for rights to any definitions they register.
+---
 
-## Agent access
+## The fine print: provenance, rights, verification & development
 
-The site exposes body-only Markdown at `/resources/tunings/<system>/<slug>.md`, metadata-rich mirrors via the [tuning catalog](https://agent-tune.com/library/index.json), and a [versioned content manifest](https://agent-tune.com/resources/content/manifest.json). Apply only the body; metadata is for discovery and verification.
-
-The stateless MCP endpoint is `https://agent-tune.com/mcp`. Its tools are `list_tunings`, `get_tuning`, `get_test_spec`, `list_resources`, `get_resource` and `get_free_tools`. Questionnaire availability is explicit; an unavailable specification must not be treated as an instruction to administer an old questionnaire. MCP retrieves public resources and does not need your questionnaire answers.
-
-Use the [installation protocol](https://agent-tune.com/resources/install-protocol.md) and [platform registry](https://agent-tune.com/resources/platforms.json) for current destinations. Metadata separates `verify.saved_text` from `verify.behavior`; there is no universal compliance probe.
-
-## Development and research provenance
-
-Run `npm run build` and `npm test` with Node 22 or later. No dependency installation is needed. Edit `data/tunings.json`, `data/contract.md` and approved definitions in `data/instruments/`; do not edit generated copies. `npm run check` also detects stale generated artifacts. License eligibility, instrument IDs, fixture scores and export parity are release gates.
-
-See the [changelog](CHANGELOG.md) and [legacy provenance](data/legacy-provenance.json). Historical questionnaires contained adaptations and undocumented substitutions. Their responses must remain attached to their actual versions. Correcting future instruments does not retroactively correct previous observations. Research about model questionnaire responses is distinct from evidence that a tuning improves task performance.
-
-## License
-
-[MIT](LICENSE) for original AgentTune work, with the [third-party exceptions and availability policy](THIRD_PARTY_NOTICES.md). Review the per-instrument terms and provenance before redistribution.
+- **Operational safeguards:** Reading a template or resource does not authorize installation, an external action, or permanent preference changes. All templates require preserving factual accuracy, material uncertainty, and explicit user scope; current task instructions take precedence over style templates, and no framework automatically outranks another. To revert a shared file, remove only the added block.
+- **Website pinning & integrity:** `agent-tune.com` pins an exact release commit and SHA-256 manifest from this repo (`agenttune-content.lock.json`) rather than fetching `main` at runtime. [dist/manifest.json](dist/manifest.json) records the SHA-256 and byte length of all `58` built artifacts; [dist/instruments.json](dist/instruments.json) pins item IDs, anchors, and definition hashes. `dist/score.js` embeds approved scoring keys cleanly for browser use, alongside the generic engine in `dist/engine.js`.
+- **Rights & third-party instruments:** Original AgentTune code and all `43` tuning templates are MIT licensed ([LICENSE](LICENSE)), but **that does not make every third-party questionnaire MIT or commercially reusable**. Check [data/instrument-rights.json](data/instrument-rights.json) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) before redistributing test items. Historical research records remain tied to their exact protocol versions ([data/legacy-provenance.json](data/legacy-provenance.json)), and behavioral research on unprompted AI quiz outputs is separate from proving downstream task gains. Metadata separates `verify.saved_text` from `verify.behavior`. Keep personal quiz responses local and out of public PRs.
+- **Building & testing locally (Node 22+, zero dependencies):** Edit `data/tunings.json`, `data/contract.md`, or approved definitions in `data/instruments/` (never hand-edit generated copies), then run `npm run build && npm test` (or `npm run check` to verify artifact checksums and zero uncommitted build drift). See [CHANGELOG.md](CHANGELOG.md) for release history.

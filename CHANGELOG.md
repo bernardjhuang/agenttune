@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 — 2026-11-27
+
+Trims repetitive runtime disclaimer boilerplate from all 43 tuning templates (`acaa449`) while preserving accuracy, material uncertainty, and authorized-scope rules. Removes the personal example file from `souls/` (keeping `souls/template.md`). Refreshes `README.md` in plain, results-first language covering the 25-model personality profiles, 12-page Personality Atlas, 36 empirical studies, 53 setup guides, MCP/agent surfaces, and the companion website repo (`bernardjhuang/agenttune-website`).
+
 ## 1.1.0 — 2026-09-26
 
 Restores MBTI-style, Enneagram, DISC and attachment questionnaire adaptations and full specifications at the site owner’s request. Their original website items, ordering and anchors are pinned as legacy edition 1.0.0. Source terms and unresolved reuse questions remain recorded separately from operational availability. Big Five, preference safeguards, strict input validation and checksum verification are retained.
