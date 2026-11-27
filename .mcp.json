@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "agenttune": {
+      "type": "http",
+      "url": "https://agent-tune.com/mcp"
+    }
+  }
+}

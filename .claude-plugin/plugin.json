@@ -1,0 +1,23 @@
+{
+  "name": "agenttune",
+  "description": "Measure how AI models behave across 25 model families and apply portable, MIT-licensed communication preference rules across Claude Code, Codex, Cursor, ChatGPT, Claude, and Meta Muse via https://agent-tune.com/mcp.",
+  "version": "1.5.0",
+  "author": {
+    "name": "Bernard Huang",
+    "url": "https://agent-tune.com/about"
+  },
+  "homepage": "https://agent-tune.com",
+  "repository": "https://github.com/bernardjhuang/agenttune",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "personality",
+    "communication-preferences",
+    "claude-md",
+    "agents-md",
+    "system-prompts",
+    "benchmarks"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json"
+}

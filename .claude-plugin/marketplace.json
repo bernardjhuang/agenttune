@@ -1,0 +1,18 @@
+{
+  "name": "agenttune",
+  "owner": {
+    "name": "Bernard Huang",
+    "url": "https://agent-tune.com/about"
+  },
+  "metadata": {
+    "description": "Portable AI communication preferences, empirical 25-model personality benchmarks, and stateless MCP linting/conversion tools.",
+    "version": "1.5.0"
+  },
+  "plugins": [
+    {
+      "name": "agenttune",
+      "source": "./",
+      "description": "Connect the stateless AgentTune MCP server (12 read-only tools) and skill workflow for linting, merging, and benchmark lookup."
+    }
+  ]
+}

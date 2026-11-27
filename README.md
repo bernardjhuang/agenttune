@@ -2,7 +2,7 @@
 
 **Measure how AI models actually behave—and give any assistant clear, copy-paste communication rules.**
 
-AgentTune studies AI model personalities across `25` model families (`87` primary checkpoints / `93` tested), pairs the findings with `5` free personality tests, `10` browser tools, `53` practical setup guides, and this open repository of `43` editable tuning templates plus local test scoring.
+AgentTune studies AI model personalities across `25` model families (`87` primary checkpoints / `93` tested), pairs the findings with `5` free personality tests, `10` browser tools, `54` practical setup guides, and this open repository of `43` editable tuning templates plus local test scoring.
 
 [Website](https://agent-tune.com/) · [Model Profiles](https://agent-tune.com/models/) · [Personality Atlas](https://agent-tune.com/research/ai-personality-rankings) · [Preference Builder](https://agent-tune.com/tools/custom-instructions-generator) · [Library](https://agent-tune.com/library/) · [Tests](https://agent-tune.com/tests/) · [Guides](https://agent-tune.com/guides/) · [Research](https://agent-tune.com/research) · [Site & Research Repo](https://github.com/bernardjhuang/agenttune-website)
 
@@ -42,10 +42,16 @@ Pick rules that fix real annoyances (filler, hedging, sycophancy, wall-of-text f
 
 ## For AI agents & developers
 
-AgentTune exposes machine-readable endpoints so agents can fetch benchmarks, rubrics, and templates without scraping HTML:
+AgentTune exposes machine-readable endpoints and a zero-auth Claude Code plugin so agents can fetch benchmarks, lint prompts, compare models, and retrieve templates without scraping HTML:
 
-- **Stateless MCP server:** `https://agent-tune.com/mcp`
-  - Tools: `list_tunings`, `get_tuning`, `get_test_spec`, `list_resources`, `get_resource`, `get_free_tools`
+- **Claude Code plugin:**
+  ```sh
+  /plugin marketplace add bernardjhuang/agenttune
+  /plugin install agenttune@agenttune
+  ```
+- **Stateless MCP server (`v1.5.0`, 12 read-only tools):** `https://agent-tune.com/mcp` (`claude mcp add --transport http agenttune https://agent-tune.com/mcp`)
+  - Templates & questionnaires: `list_tunings`, `get_tuning`, `get_test_spec`, `list_resources`, `get_resource`, `get_free_tools`
+  - Instruction tools & model benchmarks: `check_instructions`, `convert_instructions`, `build_preferences`, `get_model_profile`, `compare_models`, `recommend_rules`
 - **LLM discovery indexes:** [llms.txt](https://agent-tune.com/llms.txt) · [llms-full.txt](https://agent-tune.com/llms-full.txt) · [SKILL.md](https://agent-tune.com/SKILL.md)
 - **Clean Markdown & manifests:**
   - Body-only tuning files: `/resources/tunings/<system>/<slug>.md`
